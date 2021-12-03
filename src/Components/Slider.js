@@ -1,7 +1,7 @@
 import React from 'react';
 import nike from '../Images/nike-black.png';
 
-const Main = () => {
+const Slider = () => {
     return (
         <>
         <div className="Main_Slider">
@@ -24,4 +24,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Slider

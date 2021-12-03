@@ -41,9 +41,9 @@ const Header = () => {
             <p className="Hover">Need Help?</p>
           </p>
           <p className="Header_Border_Text1">
-              <li>EN</li>
+              {/* <li>EN</li>
               <li>BN</li>
-              <li>HN</li>
+              <li>HN</li> */}
             <IoIosArrowDown />
           </p>
           <p className="Header_Border_Text1">

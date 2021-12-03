@@ -1,11 +1,13 @@
 import './App.css';
+import Cart from './Components/Cart';
 import Header from "./Components/Header";
-import Main from "./Components/Main";
+import Slider from "./Components/Slider";
 function App() {
   return (
     <div className="App">
    {/* <Header/> */}
-   <Main/>
+   {/* <Slider/> */}
+   <Cart/>
     </div>
   );
 }

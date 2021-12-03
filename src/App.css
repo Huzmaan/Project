@@ -43,7 +43,7 @@
   padding:1em
 }
 .Header_Border_Text1{
-  padding-top: 22px;
+  padding-top: 22px; 
   padding-right: 2em;
 }
 .Hover:hover{
@@ -127,11 +127,22 @@
   display: none
 }
 .Main_Slider{
- display :flex;
- max-width: 55%;
+ /* display :flex;
+ max-width: 72%;
  align-items: center;
- line-height: 1.75;
+ line-height: 1.75; */
+ box-sizing: border-box;
+    display: flex;
+    /* flex-flow: row wrap; */
+    /* margin-top: -24px; */
+    width:  72%;
+    /* margin-left: -24px; */
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
+/* } */
 .btn_Slider{
   background-color: red;
     color: #fff;
@@ -140,4 +151,41 @@
     width: 50%;
     font-size: larger;
     padding: 6px 16px;
+}
+.Heading_Flash{
+  display: flex;
+
+}
+.Flash_Icon{
+  font-size:250%;
+  color:red;
+  top: 0;
+  position: relative;
+}
+.Main_Card{
+  width: 18em;
+  box-shadow: 5px 4px 21px;
+}
+.Card_Icon{
+  color:  yellow;
+}
+.Card_Price{
+  display: flex;
+  justify-content:flex-start;
+}
+.Price_Actual{
+  color: red;
+}
+.Price_Previous{
+  color: gray;
+}
+.Discount_Css{
+  /* border: red; */
+  border-radius: 50px;
+  background-color: red;
+  width:4%;
+  height:5%;
+  position: absolute;
+  top: 16px;
+
 }
