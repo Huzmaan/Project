@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdPhone, MdOutlineEmail, MdSearch } from "react-icons/md";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
