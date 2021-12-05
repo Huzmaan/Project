@@ -2,12 +2,36 @@
     display: flex;
 }
 .Rating_Icon{
-    height:4em;
-    width:4em;
+    height:3em;
+    width:5em;
     color:yellow;
 }
 .Rating_Heading_Text{
     font-weight: 700;
     font-size:25px;
     color: grey
+}
+.Rating_AllCarts{
+    display: flex;
+    max-width: 50%;
+    background-color: white;
+    padding-top: 36px;
+    border-radius: 20px;
+    padding-left: 36px
+    
+}
+.Rating_Image{
+    width:60%;
+}
+.Rating_Icons{
+    color:yellow
+}
+.Rating_Icons_Rate{
+    color:black
+}
+.Rating_Carts{
+    margin: -22px;
+}
+.Rating_Price{
+ color: red;
 }
