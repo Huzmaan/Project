@@ -1,9 +1,6 @@
 import React from "react";
 import { IoIosFlash } from "react-icons/io";
-import flash from "../Images/flash-3.png";
-import nike from "../Images/nike-black.png";
-import watch from "../Images/watch.png";
-import watch2 from "../Images/watch-2.png";
+import { data } from "./Carts.Helper";
 import {IoIosArrowForward} from "react-icons/io";
 import { AiFillStar, AiOutlinePlusSquare } from "react-icons/ai";
 import './Cart.scss';
@@ -22,7 +19,25 @@ const Cart = () => {
         </div>
       </div>
       <div className="All_Carts">
-        <div className="Main_Card">
+        {data?.map((item, index)=>{
+          return(
+            <div className="Main_Card" key={index}> 
+               <img src={item.image} width="100%"/>
+               <p className="Discount_Css"> {item.discount}</p>
+               <p> {item.description}</p>
+               <div className="Card_Icon">
+            <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
+            <AiFillStar />
+          </div>
+          <div className="Card_Price">
+             <p> {item.Price_Actual}</p>
+             <p> {item.Price_previous}</p>
+             <AiOutlinePlusSquare className="Plus_Icon" />
+          </div>
+            </div>
+          )
+        })}
+        {/* <div className="Main_Card">
           <img src={nike} alt="nike" width="100%" />
           <p className="Discount_Css">25% off</p>
           <p>
@@ -201,7 +216,7 @@ const Cart = () => {
             </p>
             <AiOutlinePlusSquare className="Plus_Icon" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

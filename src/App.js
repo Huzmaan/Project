@@ -3,8 +3,10 @@ import './slider.scss';
 import Cart from './Components/Cart';
 import Header from "./Components/Header";
 import Slider from "./Components/Slider";
-import Categories from "./Components/Catergory";
-import Rating_Brand from "./Components/Rating_Brand"
+import Categories from "./Components/Categories";
+import Rating_Brand from "./Components/Rating_Brand";
+import New_Arrivals from "./Components/New_Arrivals";
+import Discount from "./Components/Big_Discout"
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,8 @@ function App() {
    <Cart/>
    <Categories/>
    <Rating_Brand/> 
+   <New_Arrivals/>
+   <Discount/>
     </div>
     </div>
   );
