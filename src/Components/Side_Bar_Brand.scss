@@ -1,0 +1,51 @@
+.side-bar-brand{
+    display: flex;
+    border-radius: 7px;
+    background-color:lightgray;
+    width: 76%;
+    padding-left: 17px;
+    margin: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.Img_Ferrari{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+    right:6px;
+}
+.Side_Bar_Brand_Main{
+    background-color: #ffff;
+    max-width: 18%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px
+}
+.View_Scss{
+    background: lightgray;
+    width: 76%;
+    border-radius: 7px;
+    padding-left: 17px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: x-large;
+    margin-top: 29px;
+}
+p{
+    font-weight: 600;
+}
+.Side_Bar_Brand_Shop_Heading{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    font-size: x-large;
+    color: grey;
+}
+
+.side-bar-brand:hover,.View_Scss:hover{
+    box-shadow: 4px 6px 5px #eeeff1;
+}
+.Shop_scss,.Brand_scss{
+    color: black;
+}

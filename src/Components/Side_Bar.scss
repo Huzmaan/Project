@@ -1,0 +1,39 @@
+.Img_Ferrari{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 15px;
+    right:6px;
+}
+.Ferrari_Scss{
+    display: flex;
+    // border: grey;
+    border-radius: 7px;
+    background-color:lightgray;
+    width: 76%;
+    padding-left: 17px;
+    margin: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.View_Scss{
+    background: lightgray;
+    width: 76%;
+    border-radius: 7px;
+padding-left: 17px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: x-large;
+    margin-top: 50px;
+}
+.side-bar_Main{
+    background-color: #ffff;
+    max-width: 18%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    height:10%;
+}
+p{
+    font-weight: 600;
+}

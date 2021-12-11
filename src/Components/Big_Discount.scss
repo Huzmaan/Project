@@ -1,8 +1,59 @@
 .Big_Discount_Img{
     // display: flex;
-    width:20%;
+    width:90%;
+    margin: 10px;
+    // height:35vh;
+    // position: relative;
+    // left:9px;
     
 }
+.Big_Discount_Img:hover{
+    background-color: darkgray;
+}
+.Big_Discount_Description{
+    font-weight: 600;
+    padding-left: 10px;
+    width: 100%;
+} 
+.Big_Discount_Price_Scss{
+    color: red;
+}  
+.Big_Discount_DisPrice_Scss{
+    margin-left: 20px;
+    color: grey;
+}
 .Big_Discount_Carts{
-    max-width: 90%;
+    box-shadow: 5px 3px 5px #000000;
+    min-width: 12%;
+    height: 16em;
+    // max-width: 12%;
+    margin:30px;
+    // background-color: #FFFFFF;
+}
+.Big_Discout_Heading_Text{
+    font-weight: 700;
+    font-size:25px;
+    color: grey
+}
+.Big_Discount_Heading{
+    display: flex;
+}
+.Big_Discount_Icon{
+    color: red;
+    font-size: 35px;
+    /* background-color: red; */
+    width: 31px;
+    height: 20px;
+    top: 27px;
+    position: relative;
+}
+.Big_Discount_All_Carts{
+    // max-width: 100%;
+    display: flex;
+}
+.Big_Discount_Main_Price{
+    display: flex;
+    position: relative;
+    top: -23px;
+    padding-left: 10px;
 }
