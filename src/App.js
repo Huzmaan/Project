@@ -10,7 +10,8 @@ import Discount from "./Components/Big_Discout";
 import Side_Bar_Car from "./Components/Side_Bar_Car";
 import Side_Bar_Brands_MobilePhone from './Components/Side_Bar_Brands_MobilePhone';
 import Banner from './Components/Banner';
-import Side_Bar_Brand from './Components/Side_Bar_Barnd';
+import Side_Bar_Brand_Optics_Watch from './Components/Side_Bar_Brand_Optics_Watch';
+import Categories_Main  from './Components/Categories_Main';
 function App() {
   return (
     <div className="App">
@@ -25,7 +26,8 @@ function App() {
    <Side_Bar_Car/>
    <Side_Bar_Brands_MobilePhone/>
    <Banner/>
-   <Side_Bar_Brand/>
+   <Side_Bar_Brand_Optics_Watch/>
+   <Categories_Main/>
     </div>
     </div>
   );

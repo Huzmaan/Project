@@ -21,24 +21,6 @@ const Catergory = () => {
                         </div>
                     )
                 })}
-                {/* <div>
-             <img className="Catergory_Image1" src={categories1}alt="categories1"/>
-             <span className="Catergory_radius">
-             <p className="Catergory_Item">Headphone</p>
-             <p className="Catergory_Time">3k orders this week</p></span>
-             </div>
-             <div>
-             <img className="Catergory_Image2" src={categories2}alt="categories2"/>
-             <span className="Catergory_radius">
-             <p className="Catergory_Item">Watches</p>
-             <p className="Catergory_Time">3k orders this week</p></span>
-             </div>
-             <div>
-             <img className="Catergory_Image3" src={categories3}alt="categories3"/>
-             <span className="Catergory_radius">
-             <p className="Catergory_Item">Sunglasses</p>
-             <p className="Catergory_Time">3k orders this week</p></span>
-             </div> */}
             </div>
         </div>
     )

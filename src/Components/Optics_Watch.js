@@ -1,8 +1,8 @@
 import React from 'react';
-import {data_Optics_Watch,data_Optics_Watch1,data_Optics_Watch2} from './MobilePhone_Helper';
+import {data_Optics_Watch,data_Optics_Watch1,data_Optics_Watch2} from './Optics_Watch_Helper';
 import { AiFillStar, AiOutlinePlusSquare} from 'react-icons/ai';
 
-const MobilePhone = () => {
+const Optics_Watch = () => {
     return (
         <div>
              <div >
@@ -16,7 +16,7 @@ const MobilePhone = () => {
                 <div className="Main_Card" key={index}> 
                 <img src={item.image} width="100%"/>
                 <p className="Discount_Css"> {item.discount}</p>
-                <p> {item.Description}</p>
+                <p> {item.description}</p>
                 <div className="Card_Icon">
              <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
              <AiFillStar />
@@ -36,7 +36,7 @@ const MobilePhone = () => {
                 <div className="Main_Card" key={index}> 
                 <img src={item.image} width="100%"/>
                 <p className="Discount_Css"> {item.discount}</p>
-                <p> {item.Description}</p>
+                <p> {item.description}</p>
                 <div className="Card_Icon">
              <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
              <AiFillStar />
@@ -56,7 +56,7 @@ const MobilePhone = () => {
                 <div className="Main_Card" key={index}> 
                 <img src={item.image} width="100%"/>
                 <p className="Discount_Css"> {item.discount}</p>
-                <p> {item.Description}</p>
+                <p> {item.description}</p>
                 <div className="Card_Icon">
              <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
              <AiFillStar />
@@ -76,4 +76,4 @@ const MobilePhone = () => {
     )
 }
 
-export default MobilePhone
+export default Optics_Watch;

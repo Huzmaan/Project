@@ -1,0 +1,14 @@
+.Categories{
+    display: flex;
+    background: white;
+    // /* max-width: 13%; */
+    border-radius: 12px;
+    margin: 20px;
+    padding: 0px 30px
+}
+.Categories:hover{
+    box-shadow: 5px 5px 5px grey;
+}
+.categories_main{
+    display: flex;
+}
