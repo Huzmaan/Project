@@ -8,8 +8,9 @@ import Rating_Brand from "./Components/Rating_Brand";
 import New_Arrivals from "./Components/New_Arrivals";
 import Discount from "./Components/Big_Discout";
 import Side_Bar_Car from "./Components/Side_Bar_Car";
-import Side_Bar_Brands from './Components/Side_Bar_Brands';
-import MobilePhone from './Components/MobilePhone';
+import Side_Bar_Brands_MobilePhone from './Components/Side_Bar_Brands_MobilePhone';
+import Banner from './Components/Banner';
+import Side_Bar_Brand from './Components/Side_Bar_Barnd';
 function App() {
   return (
     <div className="App">
@@ -22,8 +23,9 @@ function App() {
    <New_Arrivals/>
    <Discount/>
    <Side_Bar_Car/>
-   <Side_Bar_Brands/>
-   <MobilePhone/>
+   <Side_Bar_Brands_MobilePhone/>
+   <Banner/>
+   <Side_Bar_Brand/>
     </div>
     </div>
   );

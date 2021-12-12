@@ -20,7 +20,7 @@
     background: lightgray;
     width: 76%;
     border-radius: 7px;
-padding-left: 17px;
+    padding-left: 17px;
     margin: 20px;
     cursor: pointer;
     font-size: x-large;
@@ -36,4 +36,7 @@ padding-left: 17px;
 }
 p{
     font-weight: 600;
+}
+.Ferrari_Scss:hover,.View_Scss:hover{
+    box-shadow: 4px 6px 5px #eeeff1
 }

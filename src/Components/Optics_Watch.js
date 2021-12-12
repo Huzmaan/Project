@@ -1,18 +1,17 @@
 import React from 'react';
-import {Data_MobilePhone,Data_MobilePhone1,Data_MobilePhone2} from './MobilePhone_Helper';
+import {data_Optics_Watch,data_Optics_Watch1,data_Optics_Watch2} from './MobilePhone_Helper';
 import { AiFillStar, AiOutlinePlusSquare} from 'react-icons/ai';
-import './MobilePhone.scss';
 
 const MobilePhone = () => {
     return (
         <div>
              <div >
         <div>
-            <h3 className="MobilePhone_Heading_text">Mobile Phones</h3>
+            <h3 className="MobilePhone_Heading_text">Optics / Watch</h3>
         </div>
         <div className="All_Carts">
           <div>
-          {Data_MobilePhone?.map((item, index)=>{
+          {data_Optics_Watch?.map((item, index)=>{
               return (
                 <div className="Main_Card" key={index}> 
                 <img src={item.image} width="100%"/>
@@ -32,7 +31,7 @@ const MobilePhone = () => {
           })}
           </div>
           <div>
-          {Data_MobilePhone1?.map((item, index)=>{
+          {data_Optics_Watch1?.map((item, index)=>{
               return (
                 <div className="Main_Card" key={index}> 
                 <img src={item.image} width="100%"/>
@@ -52,7 +51,7 @@ const MobilePhone = () => {
           })}
           </div>
           <div>
-          {Data_MobilePhone2?.map((item, index)=>{
+          {data_Optics_Watch2?.map((item, index)=>{
               return (
                 <div className="Main_Card" key={index}> 
                 <img src={item.image} width="100%"/>

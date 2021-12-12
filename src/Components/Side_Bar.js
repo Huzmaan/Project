@@ -9,12 +9,12 @@ const Side_Bar = () => {
         <div className="side-bar_Main">
             {data_Side_Bar?.map((item, index)=>{
                 return (
-                    <div key={index}>
+                    <span className="side-bar" key={index}>
                         <span className="Ferrari_Scss">
                        <img className="Img_Ferrari" src={item.image} alt="Ferrari"/>
                        <p>{item.description} </p>
                        </span>
-                    </div>
+                    </span>
                 )
             })}
             <p className="View_Scss">View All Brands</p>
