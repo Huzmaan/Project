@@ -1,7 +1,7 @@
 .MobilePhone_Heading_text{
     font-weight: 700;
     font-size:25px;
-    color: grey;
+    color: #2B3445;
     margin-left: 20px;
 }
 .All_Carts{
@@ -25,21 +25,21 @@
       width: 24%;
       height: 24px;
       position: relative;
-      top: -268px;
+      top: -303px;
       color:white;
       
   }
-  .Card_Icon{
-    display: inline-flex;
-      position: relative;
-    //   color: rgb(250, 175, 0);
-      cursor: pointer;
-      text-align: left;
-      -webkit-tap-highlight-color: transparent;
-      pointer-events: none;
-      font-size: 1.25rem;
+  // .Card_Icon{
+  //   display: inline-flex;
+  //     position: relative;
+  //     color: rgb(250, 175, 0);
+  //     cursor: pointer;
+  //     text-align: left;
+  //     -webkit-tap-highlight-color: transparent;
+  //     pointer-events: none;
+  //     font-size: 1.25rem;
       
-  }
+  // }
   .Card_Price{
     display: flex;
     justify-content:flex-start;

@@ -1,6 +1,6 @@
 .Heading_Flash{
     display: flex;
-  
+    justify-content:space-between;
   }
   .Flash_Icon{
     font-size:200%;
@@ -29,7 +29,7 @@
     position: relative;
     cursor: pointer;
   }
-  .Card_Icon{
+  .Cart_Icon{
     display: inline-flex;
       position: relative;
       color: rgb(250, 175, 0);
@@ -67,7 +67,7 @@
   .Cart_Heading_Text{
     font-weight: 700;
     font-size:25px;
-    color: grey
+    color: #2B3445
   }
   .h1{
     font-weight: 400;
@@ -79,7 +79,7 @@
     // position: absolute;
     // left: 93%;
     // top: 275%;
-    margin-left: 80%;
+    // margin-left: 80%;
     
   }
   .Cart_Heading{

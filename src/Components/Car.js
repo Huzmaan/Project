@@ -2,11 +2,17 @@ import React from 'react';
 import './Car.scss';
 import {AiFillStar,AiOutlinePlusSquare} from "react-icons/ai"
 import {Data_Cars,Data_Cars1} from './Cars_Helper'
+import {IoIosArrowForward}from "react-icons/io";
 const Car = () => {
     return (
         <div className="Car_Main">
-        <div>
+        <div style={{display:'flex',justifyContent:'space-between'}}>
             <h3 className="Cars_Heading_text">Cars</h3>
+            <div className="Veiw_Scss">
+        <p >View all
+         <IoIosArrowForward/>
+        </p>
+        </div>
         </div>
         <div className="All_Carts">
           {Data_Cars?.map((item, index)=>{

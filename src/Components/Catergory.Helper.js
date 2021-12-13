@@ -6,4 +6,6 @@ export const Categories=[
     { image:categories1, description:"HeadPhone",order:"3k order this week"},
     { image:categories2, description:"Watch",order:"3k order this week"},
     { image:categories3, description:"Sunglass",order:"3k order this week"},
+    // { image:categories1, description:"HeadPhone",order:"3k order this week"},
+    // { image:categories2, description:"Watch",order:"3k order this week"},
 ]

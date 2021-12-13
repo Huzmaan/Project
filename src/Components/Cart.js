@@ -23,9 +23,9 @@ const Cart = () => {
           return(
             <div className="Main_Card" key={index}> 
                <img src={item.image} width="100%"/>
-               <p className="Discount_Css"> {item.discount}</p>
+               <p className="Cart_Discount_Css"> {item.discount}</p>
                <p> {item.description}</p>
-               <div className="Card_Icon">
+               <div className="Cart_Icon">
             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
             <AiFillStar />
           </div>

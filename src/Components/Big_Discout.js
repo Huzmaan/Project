@@ -1,16 +1,24 @@
 import React from "react";
 import { GrGift } from "react-icons/gr";
 import "./Big_Discount.scss";
+import {IoIosArrowForward} from "react-icons/io";
 
 import {data} from "../Components/Big_Discount.Helper";
 const Big_Discout = () => {
   
   return (
     <div>
+      <div style={{display: 'flex', justifyContent:'space-between'}}>
       <span className="Big_Discount_Heading">
         <GrGift className="Big_Discount_Icon" />
         <h2 className="Big_Discout_Heading_Text">Big Discounts</h2>
       </span>
+        <div className="Veiw_Scss">
+        <p >View all
+         <IoIosArrowForward/>
+        </p>
+        </div>
+        </div>
       <span className="Big_Discount_All_Carts">
         {data?.map((item, index) => {
           return (

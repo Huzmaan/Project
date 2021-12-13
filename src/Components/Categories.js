@@ -1,14 +1,22 @@
 import React from 'react';
 import {AiFillAppstore} from "react-icons/ai";
+import {IoIosArrowForward}from "react-icons/io";
 import './Catergory.scss';
 import {Categories} from '../Components/Catergory.Helper';
 const Catergory = () => {
     return (
         <div>
+            <div style={{display: 'flex', justifyContent:"space-between"}}>
             <div className="Category_Heading">
             <AiFillAppstore className= "Catergory_Icon"/>
             <h2 className="Category_Heading_Text">Top Categories</h2 >
             </div>
+            <div className="Veiw_Scss">
+        <p >View all
+         <IoIosArrowForward/>
+        </p>
+        </div>
+        </div>
             <div className="Catergory_Scss">
                 {Categories?.map((item, index)=>{
                     return(

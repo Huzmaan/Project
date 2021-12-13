@@ -2,13 +2,19 @@ import React from 'react';
 import {Data_MobilePhone,Data_MobilePhone1,Data_MobilePhone2} from './MobilePhone_Helper';
 import { AiFillStar, AiOutlinePlusSquare} from 'react-icons/ai';
 import './MobilePhone.scss';
+import {IoIosArrowForward}from "react-icons/io";
 
 const MobilePhone = () => {
     return (
         <div>
              <div >
-        <div>
+        <div style={{display: 'flex',justifyContent:'space-between'}}>
             <h3 className="MobilePhone_Heading_text">Mobile Phones</h3>
+            <div className="Veiw_Scss">
+        <p >View all
+         <IoIosArrowForward/>
+        </p>
+        </div>
         </div>
         <div className="All_Carts">
           <div>

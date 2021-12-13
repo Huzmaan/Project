@@ -12,6 +12,7 @@ import Side_Bar_Brands_MobilePhone from './Components/Side_Bar_Brands_MobilePhon
 import Banner from './Components/Banner';
 import Side_Bar_Brand_Optics_Watch from './Components/Side_Bar_Brand_Optics_Watch';
 import Categories_Main  from './Components/Categories_Main';
+import More_For_You from './Components/More_For_You';
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
    <Banner/>
    <Side_Bar_Brand_Optics_Watch/>
    <Categories_Main/>
+   <More_For_You/>
     </div>
     </div>
   );
