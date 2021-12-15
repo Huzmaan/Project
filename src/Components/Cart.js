@@ -5,6 +5,7 @@ import {IoIosArrowForward} from "react-icons/io";
 import { AiFillStar, AiOutlinePlusSquare } from "react-icons/ai";
 import './Cart.scss';
 const Cart = () => {
+  
   return (
     <div>
       <div className="Heading_Flash">
