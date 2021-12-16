@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useState }from "react";
 import { IoIosFlash } from "react-icons/io";
 import { data } from "./Carts.Helper";
 import {IoIosArrowForward} from "react-icons/io";
-import { AiFillStar, AiOutlinePlusSquare } from "react-icons/ai";
+import {BsPlus} from "react-icons/bs";
+import {AiOutlineMinus} from "react-icons/ai";
 import './Cart.scss';
-const Cart = () => {
+function Increment(props) {
   
+   return (
+       <BsPlus className="Plus_Icon" onClick={props.onClickFunction}/>
+          )
+}
+function Decrement(props) {
+  
+  return (
+      <AiOutlineMinus className="Minus_Icon" onClick={props.onClickFunction}/>
+  )
+}
+function Display(props) {
+  return (
+    <p >{props.message}</p>
+  )
+}
+const Cart = () => {
+  const [currentId, setCurrentId] = useState(0);
+  const incrementCounter = () => setCurrentId(currentId + 1);
+  let decrementCounter = () => setCurrentId(currentId - 1);
+  if(currentId<=1) {
+    decrementCounter = () => setCurrentId(0);
+  }
+
   return (
     <div>
       <div className="Heading_Flash">
@@ -27,13 +51,16 @@ const Cart = () => {
                <p className="Cart_Discount_Css"> {item.discount}</p>
                <p> {item.description}</p>
                <div className="Cart_Icon">
-            <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-            <AiFillStar />
+                 <p>{item.Rating}</p>
           </div>
           <div className="Card_Price">
              <p className="Price_Actual"> {item.Price_Actual}</p>
              <p className="Price_previous"><s> {item.Price_previous}</s></p>
-             <AiOutlinePlusSquare className="Plus_Icon" />
+             <div> 
+      <Decrement onClickFunction={decrementCounter}/>
+      <Display message={currentId}/> 
+      <Increment onClickFunction={incrementCounter}/>
+    </div>
           </div>
             </div>
           )

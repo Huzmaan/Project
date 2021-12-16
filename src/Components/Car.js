@@ -1,6 +1,7 @@
 import React from 'react';
 import './Car.scss';
-import {AiFillStar,AiOutlinePlusSquare} from "react-icons/ai"
+import {FiStar} from "react-icons/fi";
+import {BsPlus} from "react-icons/bs";
 import {Data_Cars,Data_Cars1} from './Cars_Helper'
 import {IoIosArrowForward}from "react-icons/io";
 const Car = () => {
@@ -22,13 +23,13 @@ const Car = () => {
                 <p className="Discount_Css"> {item.discount}</p>
                 <p> {item.description}</p>
                 <div className="Card_Icon">
-             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-             <AiFillStar />
+             <FiStar /> <FiStar /> <FiStar /> <FiStar />
+             <FiStar />
            </div>
            <div className="Card_Price">
               <p className="Price_Actual"> {item.Price_Actual}</p>
               <p className="Price_Previous"><s> {item.Price_previous}</s></p>
-              <AiOutlinePlusSquare className="Plus_Icon" />
+              <BsPlus className="Plus_Icon" />
            </div>
              </div>
               )
@@ -42,13 +43,13 @@ const Car = () => {
                 <p className="Discount_Css"> {item.discount}</p>
                 <p> {item.description}</p>
                 <div className="Card_Icon">
-             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-             <AiFillStar />
+             <FiStar /> <FiStar /> <FiStar /> <FiStar />
+             <FiStar />
            </div>
            <div className="Card_Price">
               <p className="Price_Actual"> {item.Price_Actual}</p>
               <p className="Price_Previous"><s> {item.Price_previous}</s></p>
-              <AiOutlinePlusSquare className="Plus_Icon" />
+              <BsPlus className="Plus_Icon" />
            </div>
              </div>
               )

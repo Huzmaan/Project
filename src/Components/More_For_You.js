@@ -1,5 +1,6 @@
 import React from 'react';
-import {AiFillStar, AiOutlinePlusSquare}from 'react-icons/ai';
+import {FiStar}from 'react-icons/fi';
+import {BsPlus} from 'react-icons/bs';
 import { IoIosArrowForward } from 'react-icons/io';
 import {Data_More_For_You,Data_More_For_You1,Data_More_For_You2,Data_More_For_You3} from './More_For_You_Helper';
 
@@ -24,13 +25,13 @@ const More_For_You = () => {
                 <p className="Discount_Css"> {item.discount}</p>
                 <p> {item.Description}</p>
                 <div className="Card_Icon">
-             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-             <AiFillStar />
+             <FiStar /> <FiStar /> <FiStar /> <FiStar />
+             <FiStar />
            </div>
            <div className="Card_Price">
               <p className="Price_Actual"> {item.Price_Actual}</p>
               <p className="Price_Previous"><s> {item.Price_Previous}</s></p>
-              <AiOutlinePlusSquare className="Plus_Icon" />
+              <BsPlus className="Plus_Icon" />
            </div>
              </div>
               )
@@ -44,13 +45,13 @@ const More_For_You = () => {
                 <p className="Discount_Css"> {item.discount}</p>
                 <p> {item.Description}</p>
                 <div className="Card_Icon">
-             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-             <AiFillStar />
+             <FiStar /> <FiStar /> <FiStar /> <FiStar />
+             <FiStar />
            </div>
            <div className="Card_Price">
               <p className="Price_Actual"> {item.Price_Actual}</p>
               <p className="Price_Previous"><s> {item.Price_Previous}</s></p>
-              <AiOutlinePlusSquare className="Plus_Icon" />
+              <BsPlus className="Plus_Icon" />
            </div>
              </div>
               )
@@ -64,13 +65,13 @@ const More_For_You = () => {
                 <p className="Discount_Css"> {item.discount}</p>
                 <p> {item.Description}</p>
                 <div className="Card_Icon">
-             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-             <AiFillStar />
+             <FiStar /> <FiStar /> <FiStar /> <FiStar />
+             <FiStar />
            </div>
            <div className="Card_Price">
               <p className="Price_Actual"> {item.Price_Actual}</p>
               <p className="Price_Previous"><s> {item.Price_Previous}</s></p>
-              <AiOutlinePlusSquare className="Plus_Icon" />
+              <BsPlus className="Plus_Icon" />
            </div>
              </div>
               )
@@ -84,13 +85,13 @@ const More_For_You = () => {
                 <p className="Discount_Css"> {item.discount}</p>
                 <p> {item.Description}</p>
                 <div className="Card_Icon">
-             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-             <AiFillStar />
+             <FiStar /> <FiStar /> <FiStar /> <FiStar />
+             <FiStar />
            </div>
            <div className="Card_Price">
               <p className="Price_Actual"> {item.Price_Actual}</p>
               <p className="Price_Previous"><s> {item.Price_Previous}</s></p>
-              <AiOutlinePlusSquare className="Plus_Icon" />
+              <BsPlus className="Plus_Icon" />
            </div>
              </div>
               )
