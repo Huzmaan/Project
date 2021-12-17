@@ -43,10 +43,10 @@ const Cart = () => {
         </p>
         </div>
       </div>
-      <div className="All_Carts">
+      <div className="All_Carts1">
         {data?.map((item, index)=>{
           return(
-            <div className="Main_Card" key={index}> 
+            <div className="Main_Card1" key={index}> 
                <img src={item.image} width="100%"/>
                <p className="Cart_Discount_Css"> {item.discount}</p>
                <p> {item.description}</p>

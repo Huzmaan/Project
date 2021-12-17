@@ -18,8 +18,6 @@ export const Data_Categories_Main=[
     { image:Phone,description:"Mobile"},
     { image:Shoe,description:"Laptop"},
     { image:Desktop,description:"Desktop"},
-]
-export const Data_Categories_Main1=[
     { image:Tablet,description:"Tablet"},
     {image:Fashion1,description:"Fashion"},
     {image:Electronics,description:"Electronics"},
