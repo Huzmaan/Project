@@ -17,20 +17,12 @@ export const Data_More_For_You=[
 { image:Bike2,Description:"Xamaha R15 Black",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
 { image:Bike3,Description:"Xamaha R15 Blue",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
 { image:Cycle,Description:"Xevel 2020",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
-{ image:Bike4,Description:"Jackson TB1",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
-{ image:Electric1,Description:"Siri 2020",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
-{ image:Electric2,Description:"COSOR1",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"}, 
-{ image:Electric3,Description:"Ranasonic Charger",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
-{ image:Electric3,Description:"Lumix DSIR",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
-{ image:Camera,Description:"Atech Cam 1080p",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250:00"},
-{ image:Electric5,Description:"Tony a9",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},   
-{ image:Camera2,Description:"beat sw3",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
-]
-export const Data_More_For_You1=[
-]
-export const Data_More_For_You2=[
-
-]
-export const Data_More_For_You3=[
-
+// { image:Bike4,Description:"Jackson TB1",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
+// { image:Electric1,Description:"Siri 2020",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
+// { image:Electric2,Description:"COSOR1",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"}, 
+// { image:Electric3,Description:"Ranasonic Charger",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
+// { image:Electric3,Description:"Lumix DSIR",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
+// { image:Camera,Description:"Atech Cam 1080p",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250:00"},
+// { image:Electric5,Description:"Tony a9",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},   
+// { image:Camera2,Description:"beat sw3",discount:"25% off",Price_Actual:"$187.50",Price_Previous:"250.00"},
 ]

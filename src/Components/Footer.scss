@@ -1,0 +1,50 @@
+.PlayStore_Img{
+    width:100%;
+}
+.logo{
+    max-width:50%;
+    margin:60px;
+}
+.Main_Footer{
+    background-color: rgb(12, 14, 48);
+    color: grey;
+    margin-top:30px;
+}
+.Heading{
+    color: white;
+}
+.Main_Text_Footer{
+    display:flex;
+
+}
+.paragraph:hover{
+ color: white;
+ cursor: pointer;
+}
+.About,.Contact,.Customer{
+    width: 240px;
+}
+.Icon_Footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    // border: 5px solid rgba(0,0,0,0.4);
+    cursor: pointer;
+    margin: 2px;
+    border-color: rgba(0, 0, 0, 0.4);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+.Icon_Footer:hover{
+    background-color: rgb(12, 14, 48);
+  border: rgb(12, 14, 48);
+}
+.Icon_Flex{
+    display: inline-flex;
+    
+}

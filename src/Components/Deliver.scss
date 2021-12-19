@@ -1,5 +1,7 @@
 .Main_Deliver{
     display: flex;
+    align-items: center;
+    justify-content: center;
     .Deliver_Card{
         min-width: 12%;
         width: 10px;
@@ -8,6 +10,10 @@
         padding: 20px;
         border: 2px solid gainsboro;
         border-radius: 20px;
-        margin-right: 65px
+        margin-right: 65px;
+        background-color:white;
     }
+}
+.Deliver_Card:hover{
+    box-shadow:7px 7px 10px black;
 }

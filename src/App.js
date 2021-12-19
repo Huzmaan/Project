@@ -1,5 +1,6 @@
 import './Header.scss';
 import './slider.scss';
+// import {useState} from "react";
 import Cart from './Components/Cart';
 import Header from "./Components/Header";
 import Slider from "./Components/Slider";
@@ -14,11 +15,15 @@ import Side_Bar_Brand_Optics_Watch from './Components/Side_Bar_Brand_Optics_Watc
 import Categories_Main  from './Components/Categories_Main';
 import More_For_You from './Components/More_For_You';
 import Deliver from './Components/Deliver';
+import Footer from './Components/Footer';
 function App() {
+  // const [selected,setSelected] = useState("")
   return (
     <div className="App">
-   {/* <Header/> */}
+      <div className="Header_Slider">
+   <Header/>
    <Slider/>
+   </div>
    <div className="App1">
    <Cart/>
    <Categories/>
@@ -32,6 +37,7 @@ function App() {
    <Categories_Main/>
    <More_For_You/>
    <Deliver/>
+   <Footer/>
     </div>
     </div>
   );

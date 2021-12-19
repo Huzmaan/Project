@@ -4,6 +4,7 @@
 }
 .App1{
   background-color: #F6F9FC;
+  // max-width: 1205px;
   // background-color:white;
 }
 .Main_Header{
@@ -12,7 +13,7 @@
     /* height: 25%;   */
     background-color:white;
     /* color: #fff; */
-    position: fixed;
+    // position: fixed;
     /* top: 0; */
     width: 100%;
     z-index: 1;
@@ -33,6 +34,8 @@
 }
 .Header_Border_div1{
  display: flex;
+ justify-content: space-between;
+
  cursor: pointer;
 }
 .Header_Border_div2{
@@ -44,14 +47,28 @@
 
 }
 .Header_Border_Text{
-  padding:1em
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding :0px 10px;
+}
+.Phone_Icon{
+  font-size:20px; 
 }
 .Header_Border_Text1{
-  padding-top: 22px; 
+  outline: none;
+    border: none;
+  // padding-top: 22px; 
   padding-right: 2em;
+  background-color: rgb(15, 52, 96);
+  // background-color:#F6F9FC;
+color: white;
 }
 .Hover:hover{
   color: red;
+}
+option:hover{
+  background-color: red;
 }
 .Search:hover{
   border-color:#000000;
@@ -73,14 +90,35 @@
 }
 .Search_Input{
   border: none;
-  width:70%;
+  width: 80%;
+  height: 33px;
+  outline: none;
+  border-radius: 50px;
+  font-size: 15px;
+}
+option{
+  background-color: #ffffff;
+  color: #000000;
+}
+.Search_Icon{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 6px;
+    color: grey;
 }
 .Btn-Categories{
   border: none;
-  width: 28%;
+  outline: none;
+  color: #000;
+    opacity: 0.9;
+  // width: 28%;
+  padding: 0px 10px;
   cursor: pointer;
   border-end-end-radius: 24px;
-  border-top-right-radius: 24px
+  border-top-right-radius: 24px;
+  background-color:#F6F9FC
 }
 .Header_Icon{
   /* border-color: aliceblue; */
@@ -90,18 +128,29 @@
   width:25%;
 }
 .Icon{
-  background: lightgray;
-    /* padding: 2%; */
+  // background: lightgray;
+     padding: 2%; 
     color:rgba(0, 0, 0, 0.54);
     border-radius: 50px;
-    /* width:6%; */
-    /* font-style: medium; */
+    width:6%; 
+    //  font-style: medium;
     cursor: pointer;
 
 }
+.categories_icon{
+  font-size: 27px;
+    margin-left: 10px;
+    color: #000;
+}
+option:hover{
+  color: red
+}
 .Btn_Categories{
+  outline: none;
+    background: #F6F9FC;
+    color: darkgray;
   border:none;
-  width: 15%;
+  // width: 15%;
   /* padding-top: 10px; */
   /* padding-bottom: 10px; */
  text-align: justify;
@@ -115,6 +164,55 @@
 .Header_Container2{
   /* padding:1em; */
   display: flex;
+  // width: 400px;
+  position: relative;
+}
+.Header_Container2 .DropDown{
+  //  padding:15px 20px;
+  //  background-color:#ffffff;
+  //  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.6);
+  //  font-weight: bold;
+  padding:10px 10px;
+   color: #333;
+   display:flex;
+   align-items: center;
+   cursor: pointer;
+   justify-content: space-between;
+}
+.Header_Container2 .DropDown:hover{
+  color: red;
+}
+.DropDown .DropDown_Contain{
+  position: absolute;
+  top: 110%;
+  // left:0;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.6);
+   font-weight: 500;
+   color: #333;
+   z-index: 1;
+  //  width:95%;
+
+}
+.DropDown .DropDown_Contain .DropDown_Item{
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.DropDown .DropDown_Contain .DropDown_Item:hover{
+  background-color: #F6F9FC
+}
+.DropDown_Item:hover{
+  color: red
+}
+.categories{
+  background: #F6F9FC;
+    color: darkgray;
+    width: 222px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Hover{
   padding-left: 1em;
@@ -123,10 +221,16 @@
 .DropDown_Contain{
   display: none;
 }
-.Hover_home:hover .DropDown_Contain{
-   color: red;
+.DropDown:hover .DropDown_Contain{
+  //  color: red;
    display: block !important;
+  //  .DropDown_Item{
+  //    display: block !important;
+  //  }
 }
 .Categories{
   display: none
 }
+// .DropDown_Item{
+//   display: none;
+// }

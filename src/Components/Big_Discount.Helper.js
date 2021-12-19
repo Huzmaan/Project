@@ -15,7 +15,7 @@ export const data = [
   { image:Camera, description: "Setgearr 2020",price: "$250",disPrice: "$250"},
   { image: CameraSony, description:"Tony BGB",price: "$250",disPrice: "$250"},
   { image:HomeAppliance , description:"RG Product ",price: "$250",disPrice: "$250"},
-  { image:GameDevice , description:"Ranasonic 2019 ",price: "$250",disPrice: "$250"},
-  { image:pune , description:"Pune HD ",price: "$250",disPrice: "$250"},
-  { image:Camera2 , description:"Tony CCTV ",price: "$250",disPrice: "$250"},
+  // { image:GameDevice , description:"Ranasonic 2019 ",price: "$250",disPrice: "$250"},
+  // { image:pune , description:"Pune HD ",price: "$250",disPrice: "$250"},
+  // { image:Camera2 , description:"Tony CCTV ",price: "$250",disPrice: "$250"},
 ];
