@@ -26,7 +26,7 @@ function App() {
    </div>
    <div className="App1">
    <Cart/>
-   <Categories/>
+   {/* <Categories/> */}
    <Rating_Brand/> 
    <New_Arrivals/>
    <Discount/>

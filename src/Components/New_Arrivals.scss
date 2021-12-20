@@ -1,6 +1,6 @@
 .New_Arrivals_Icon{
     color:yellow;
-    font-size: 70px;
+    font-size: 45px;
 }
 .New_Arrivals_Heading_Text{
     font-weight: 700;
@@ -9,6 +9,8 @@
 }
 .New_Arrivals_Heading{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .New_Arrivals_Veiw_Scss{
     color: gray;

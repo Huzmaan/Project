@@ -1,6 +1,7 @@
 .Heading_Flash{
     display: flex;
     justify-content:space-between;
+    align-items: center;
   }
   .Flash_Icon{
     font-size:200%;
@@ -34,14 +35,14 @@
   //   box-shadow:3px 3px 5px rgba(210,63, 87);
   // }
   .Cart_Icon{
-    display: inline-flex;
-      position: relative;
+    // display: inline-flex;
+      // position: relative;
       color: rgb(250, 175, 0);
       cursor: pointer;
-      text-align: left;
+      // text-align: left;
       -webkit-tap-highlight-color: transparent;
-      pointer-events: none;
-      font-size: 1.25rem;
+      // pointer-events: none;
+      // font-size: 1.25rem;
       
   }
   .Discount_Css{
@@ -53,18 +54,20 @@
       position: relative;
       top: -268px;
       color:white;
-      
+      top: -22px;
+      left: -12px;
   }
   .All_Carts1{
     display: flex;
     .Main_Card1{
       // min-width: 20%;
       width: 18em;
-      box-shadow: grey 0px 0px 2px;
+      // box-shadow: grey 0px 0px 2px;
       /* position:absolute; */
       padding:10px 20px;
       border-radius:20px;
       margin: 20px 20px;
+      background-color:#fff;
       
     }
   }

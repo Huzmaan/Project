@@ -10,7 +10,7 @@ const Big_Discout = () => {
     <div>
       <div style={{display: 'flex', justifyContent:'space-between'}}>
       <span className="Big_Discount_Heading">
-        <GrGift className="Big_Discount_Icon" />
+        <GrGift className="Big_Discount_Icon" background="green" />
         <h2 className="Big_Discout_Heading_Text">Big Discounts</h2>
       </span>
         <div className="Veiw_Scss">

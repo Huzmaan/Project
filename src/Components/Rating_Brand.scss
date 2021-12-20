@@ -12,10 +12,12 @@
 }
 .Rating_Heading{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Rating_Icon{
     color:yellow;
-    font-size:70px;
+    font-size:45px;
 }
 .Rating_Heading_Text{
     font-weight: 700;
@@ -75,6 +77,8 @@
 }
 .Brand_Heading{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Brand_Veiw_Scss{
     color: gray;

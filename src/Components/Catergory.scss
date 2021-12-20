@@ -15,25 +15,15 @@
   .Catergory_Scss{
       display: flex;
       margin: 10px;
+    //   width: 90%;
   }
   .Catergory_Image{
-      width:75%;
+    //   width:75%;
       cursor: pointer;
       border: 20px solid #ffff;
       margin: 10px;
+    //   width: 100%;
 
-  }
-  .Catergory_Image2{
-      width:75%;
-      cursor: pointer;
-      margin: 10px;
-      border: 20px solid #ffff;
-  }
-  .Catergory_Image3{
-      width:75%;
-      margin: 10px;
-      cursor: pointer;
-      border: 20px solid #ffff;
   }
   .Catergory_Image1:hover{
       color:solid darkblue!important;
@@ -72,7 +62,7 @@
       background-color: grey;
       opacity: 0.6;
       border-radius: 50px;
-      width: 11%;
+    //   width: 11%;
     color: black;
     // font-size: initial;
     padding: 0px 10px;

@@ -8,7 +8,7 @@ const Optics_Watch = () => {
     return (
         <div>
              <div >
-        <div style={{display: 'flex',justifyContent:'space-between'}}>
+        <div style={{display: 'flex',justifyContent:'space-between',alignItems:'center'}}>
             <h3 className="MobilePhone_Heading_text">Optics / Watch</h3>
             <div className="Veiw_Scss">
         <p >View all

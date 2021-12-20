@@ -23,12 +23,12 @@
     color: grey;
 }
 .Big_Discount_Carts{
-    box-shadow: 5px 3px 5px #000000;
+    // box-shadow: 5px 3px 5px #000000;
     min-width: 12%;
     height: 16em;
     // max-width: 12%;
     margin:30px;
-    // background-color: #FFFFFF;
+    background-color: #fff;
 }
 .Big_Discout_Heading_Text{
     font-weight: 700;
@@ -37,15 +37,15 @@
 }
 .Big_Discount_Heading{
     display: flex;
+    justify-content:center;
+    align-items:center;
 }
 .Big_Discount_Icon{
-    color: red;
-    font-size: 35px;
-    /* background-color: red; */
-    width: 31px;
-    height: 20px;
-    top: 27px;
-    position: relative;
+    font-size:25px;
+    path {
+        stroke: red;
+
+    }
 }
 .Big_Discount_All_Carts{
     // max-width: 100%;
