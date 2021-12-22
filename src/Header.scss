@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: inherit;
-  font-size:12px;
+  font-size:8px;
 }
 .Header_Border_div1{
  display: flex;
@@ -129,6 +129,7 @@ option{
 }
 .Icon{
   // background: lightgray;
+  background-color: #F6F9FC;
      padding: 2%; 
     color:rgba(0, 0, 0, 0.54);
     border-radius: 50px;
@@ -199,6 +200,9 @@ option:hover{
   padding: 10px;
   cursor: pointer;
   transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .DropDown .DropDown_Contain .DropDown_Item:hover{
   background-color: #F6F9FC

@@ -11,8 +11,9 @@ const Rating_Brand = () => {
     <div className="rating-brand">
       <div>
         <span className="Rating_Heading">
+          <div className="rating_heading">
           <FaMedal className="Rating_Icon" />
-          <h2 className="Rating_Heading_Text">Top Rating</h2>
+          <h2 className="Rating_Heading_Text">Top Rating</h2></div>
           <div className="Rating_Veiw_Scss">
             <p>
               View all

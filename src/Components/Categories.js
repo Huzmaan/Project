@@ -5,8 +5,8 @@ import "./Catergory.scss";
 import { Categories } from "../Components/Catergory.Helper";
 const Catergory = () => {
   return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+    <div className="Main_Category">
+      <div className="catergory">
         <div className="Category_Heading">
           <AiFillAppstore className="Catergory_Icon" />
           <h2 className="Category_Heading_Text">Top Categories</h2>
@@ -21,7 +21,7 @@ const Catergory = () => {
       <div className="Catergory_Scss">
         {Categories?.map((item, index) => {
           return (
-            <div key={index}>
+            <div className="catergory_main" key={index}>
               <img className="Catergory_Image" src={item.image} />
               <span className="Catergory_radius">
                 <p className="Catergory_Item">{item.description}</p>

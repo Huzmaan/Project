@@ -1,6 +1,23 @@
     .rating-brand{
         display: flex;
     }
+    @media only screen  and(max-width:1200px){
+        .rating-brand{
+            display: block;
+        }
+        .Rating_AllCarts{
+            max-width: 100%;
+        }
+        .Rating_Heading{
+            display: flex;
+            // justify-content: space-between;
+        }
+    }
+    .rating_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .Rating_Veiw_Scss{
         color: gray;
         display:flex;
@@ -10,10 +27,13 @@
         // top: 275%;
         margin-left: 50%;   
 }
+.Main_Brands{
+    margin-left: 60px;
+}
 .Rating_Heading{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    // align-items: center;
 }
 .Rating_Icon{
     color:yellow;
@@ -26,19 +46,20 @@
 }
 .Rating_AllCarts{
     display: flex;
-    max-width: 82%;
+    max-width: 100%;
     background-color: white;
     padding: 36px 0px;
     border-radius: 20px;
     padding-left: 36px;
-    margin-left:36px;
+    // margin-left:36px;
     
 }
+
 .Rating_Image{
     width:75%;
 }
 .Rating_Icons{
-    color:yellow
+    color:#faaf00
 }
 .Rating_Icons_Rate{
     color:black
@@ -77,7 +98,7 @@
 }
 .Brand_Heading{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 }
 .Brand_Veiw_Scss{
@@ -87,7 +108,7 @@
     // position: absolute;
     // left: 93%;
     // top: 275%;
-    margin-left: 36%;
+    margin-left: 33%;
     
   }
   .Brands_Carts_Img:hover{

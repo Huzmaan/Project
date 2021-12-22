@@ -4,6 +4,10 @@
     top: 26px;
     position: relative;
 }
+.Main_Category{
+  max-width: 100%;
+  overflow: hidden;
+}
 .Category_Heading_Text{
     font-weight: 700;
     font-size:25px;
@@ -15,48 +19,58 @@
   .Catergory_Scss{
       display: flex;
       margin: 10px;
+      max-width: 100%;
+      overflow: hidden;
     //   width: 90%;
+  }
+  .catergory_main{
+    width: 33%;
+    padding: 32px;
+    box-sizing: border-box;
+    position: relative;
   }
   .Catergory_Image{
     //   width:75%;
       cursor: pointer;
       border: 20px solid #ffff;
-      margin: 10px;
-    //   width: 100%;
+      // margin: 10px;
+      border-radius: 26px;
+      width: 100%;
 
   }
-  .Catergory_Image1:hover{
+  .Catergory_Image:hover{
       color:solid darkblue!important;
       opacity: 0.8;
       z-index: 1;
   }
-  .Catergory_Image2:hover{
-    color:solid darkblue!important;
-    opacity: 0.8;
-    z-index: 1;
-  }
-  .Catergory_Image3:hover{
-    background-color:darkgray;
-    opacity: 0.8;
-    z-index: 1;
+  .catergory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .Catergory_Item{
-      color:#fff;
-      background-color:blue;
-      width:6%;
-      text-align:center;
-      position: absolute;
-      border-radius: 50px;
-      font-size: 12px;
-      padding-top:10px;
-      padding-bottom: 10px;
-      opacity: 0.6;
-      left: -26.5%;
-      top: 22px
+    color: #fff;
+    background-color: blue;
+    width: 21%;
+    text-align: center;
+    // position: absolute;
+    border-radius: 50px;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.6;
+    margin-top: 18px;
+  //   left: -107px;
+  //   top: 22px;
   }
   .Catergory_radius{
-      position:absolute;
-      width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -150px;
+    left: 20px;
+    margin: auto;
   }
   .Catergory_Time{
       background-color: grey;
@@ -67,9 +81,9 @@
     // font-size: initial;
     padding: 0px 10px;
     font-weight: 500;
-    position: absolute;
-    left: -15%;
-    top: 20px
+  //   position: absolute;
+  //   left: -15%;
+  //   top: 20px
   }
   .Category_Image_Radius{
       border:20px solid white
