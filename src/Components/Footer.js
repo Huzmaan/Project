@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.scss';
+import Container from "../Components/Container";
 import {Data_Footer_Logo,Data_Footer_About,Data_Footer_Customer,Data_Footer_Contact} from "./Footer_Helper"
 
 const Footer = () => {
     return (
         <div className="Main_Footer">
+                <Container>
             <div className="Main_Text_Footer">
             <div>
             {Data_Footer_Logo?.map((item, index)=>{
@@ -65,6 +67,7 @@ const Footer = () => {
         })}  
         </div>
         </div>
+        </Container>
         </div>
     )
 }

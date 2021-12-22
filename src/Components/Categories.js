@@ -3,9 +3,11 @@ import { AiFillAppstore } from "react-icons/ai";
 import { IoIosArrowForward } from "react-icons/io";
 import "./Catergory.scss";
 import { Categories } from "../Components/Catergory.Helper";
+import Container from '../Components/Container'
 const Catergory = () => {
   return (
     <div className="Main_Category">
+      <Container>
       <div className="catergory">
         <div className="Category_Heading">
           <AiFillAppstore className="Catergory_Icon" />
@@ -31,6 +33,7 @@ const Catergory = () => {
           );
         })}
       </div>
+      </Container>
     </div>
   );
 };

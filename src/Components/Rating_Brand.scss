@@ -2,15 +2,18 @@
         display: flex;
     }
     @media only screen  and(max-width:1200px){
-        .rating-brand{
-            display: block;
-        }
-        .Rating_AllCarts{
-            max-width: 100%;
-        }
-        .Rating_Heading{
-            display: flex;
-            // justify-content: space-between;
+        // .rating-brand{
+        //     display: block;
+        // }
+        // .Rating_AllCarts{
+        //     max-width: 100%;
+        // }
+        // .Rating_Heading{
+        //     display: flex;
+        //     // justify-content: space-between;
+        // }
+        .Rating{
+            width: 100%;
         }
     }
     .rating_heading{
@@ -36,8 +39,8 @@
     // align-items: center;
 }
 .Rating_Icon{
-    color:yellow;
-    font-size:45px;
+    color: rgb(250, 180, 0);
+    font-size: 1.5em;;
 }
 .Rating_Heading_Text{
     font-weight: 700;
@@ -59,7 +62,8 @@
     width:75%;
 }
 .Rating_Icons{
-    color:#faaf00
+    color:#faaf00;
+    display: flex;
 }
 .Rating_Icons_Rate{
     color:black
@@ -68,11 +72,19 @@
     // margin: -22px;
 }
 .Rating_Price{
- color: red;
+ color: #D23F57;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 .Rating_Image:hover{
     background-color:darkgrey;
     // opacity: 0.8;    
+}
+.Rating_Text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 // Featueres & Brand Scss
 .Brands_Carts{
@@ -88,8 +100,8 @@
     border-radius: 6%;
 }
 .Brand_Icon{
-    color:yellow;
-    font-size:70px;
+    color: rgb(250, 180, 0);
+    font-size: 1.5em;
 }
 .Brand_Heading_Text{
     font-weight: 700;

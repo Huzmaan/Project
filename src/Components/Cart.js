@@ -1,5 +1,6 @@
 import React, { useState }from "react";
 import { IoIosFlash } from "react-icons/io";
+import Container from "../Components/Container";
 import { data } from "./Carts.Helper";
 import {IoIosArrowForward} from "react-icons/io";
 import {BsPlus} from "react-icons/bs";
@@ -32,6 +33,7 @@ const Cart = () => {
 
   return (
     <div>
+      <Container>
       <div className="Heading_Flash">
         <div className="Cart_Heading">
         <IoIosFlash className="Flash_Icon" />
@@ -67,6 +69,7 @@ const Cart = () => {
         })}
         
       </div>
+      </Container>
     </div>
   );
 };

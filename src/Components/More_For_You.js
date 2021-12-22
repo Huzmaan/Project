@@ -3,11 +3,12 @@ import {FiStar}from 'react-icons/fi';
 import {BsPlus} from 'react-icons/bs';
 import { IoIosArrowForward } from 'react-icons/io';
 import {Data_More_For_You} from './More_For_You_Helper';
+import Container from "../Components/Container"
 
 const More_For_You = () => {
     return (
-        <div>
-             <div >
+      <div >
+        <Container>
         <div style={{display: 'flex',justifyContent:'space-between'}}>
             <h3 className="MobilePhone_Heading_text">More For You</h3>
             <div className="Veiw_Scss">
@@ -36,7 +37,7 @@ const More_For_You = () => {
               )
           })}
           </div>
-        </div>
+          </Container>
         </div>
     )
 }

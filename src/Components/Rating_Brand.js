@@ -5,15 +5,17 @@ import { RatingBrand,Brand } from "./Rating_Brands.Helper";
 import { AiFillStar } from "react-icons/ai";
 import { GiNorthStarShuriken } from "react-icons/gi";
 import { IoIosArrowForward } from "react-icons/io";
+import Container from "../Components/Container";
 
 const Rating_Brand = () => {
   return (
-    <div className="rating-brand">
-      <div>
+    <Container>
+        <div className="rating-brand">
+      <div className="Rating">
         <span className="Rating_Heading">
           <div className="rating_heading">
           <FaMedal className="Rating_Icon" />
-          <h2 className="Rating_Heading_Text">Top Rating</h2></div>
+          <h2 className="Rating_Heading_Text">Top Ratings</h2></div>
           <div className="Rating_Veiw_Scss">
             <p>
               View all
@@ -27,16 +29,18 @@ const Rating_Brand = () => {
               <div key={index}>
                 <img className="Rating_Image" src={item.image} />
                 <br />
+                <div style={{display:"inline-block",justifyContent:"center",alignItems:"center"}}>
                 <span className="Rating_Icons">
                   <AiFillStar />
                   <AiFillStar />
                   <AiFillStar />
                   <AiFillStar />
                   <AiFillStar />
-                  <span className="Rating_Icons_Rate"> {item.Rating}</span>;
+                  <span className="Rating_Icons_Rate"> {item.Rating}</span>
                 </span>
                 <p className="Rating_Text">{item.description}</p>
                 <p className="Rating_Price">{item.price}</p>
+              </div>
               </div>
             );
           })}
@@ -65,6 +69,7 @@ const Rating_Brand = () => {
         </div>
       </div>
     </div>
+      </Container>
   );
 };
 

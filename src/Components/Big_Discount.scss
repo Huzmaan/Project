@@ -16,7 +16,7 @@
     width: 100%;
 } 
 .Big_Discount_Price_Scss{
-    color: red;
+    color: rgb(210, 63, 87);
 }  
 .Big_Discount_DisPrice_Scss{
     margin-left: 20px;
@@ -24,10 +24,10 @@
 }
 .Big_Discount_Carts{
     // box-shadow: 5px 3px 5px #000000;
-    min-width: 12%;
-    height: 16em;
+    min-width: 15%;
+    height: 17em;
     // max-width: 12%;
-    margin:30px;
+    margin:10px;
     background-color: #fff;
 }
 .Big_Discout_Heading_Text{
@@ -41,9 +41,9 @@
     align-items:center;
 }
 .Big_Discount_Icon{
-    font-size:25px;
+    font-size:1.5em;
     path {
-        stroke: red;
+        stroke: rgb(210, 63, 87);
 
     }
 }
@@ -54,6 +54,6 @@
 .Big_Discount_Main_Price{
     display: flex;
     position: relative;
-    top: -23px;
+    top: -30px;
     padding-left: 10px;
 }

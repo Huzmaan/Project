@@ -3,11 +3,13 @@ import "./New_Arrivals.scss";
 import { Arrivals } from './New_Arrivals.Helper';
 import {MdFiberNew} from 'react-icons/md';
 import {IoIosArrowForward} from "react-icons/io";
+import Container from "../Components/Container";
 
 
 const New_Arrivals = () => {
     return (
         <div>
+            <Container>
             <span className="New_Arrivals_Heading">
                 <MdFiberNew className="New_Arrivals_Icon"/>
                 <h2 className="New_Arrivals_Heading_Text">New Arrivals</h2>
@@ -27,38 +29,8 @@ const New_Arrivals = () => {
             </div>
           );
         })}
-
-                {/* <span>
-                    <img src={imagegoggles} alt="" />
-                    <p>Sunglass</p>
-                    <p >$150</p>
-                 </span>
-                <span>
-                    <img className="New_Arrivals_Image_Scss" src={lipstick2} alt="" />
-                    <p>Makeup</p>
-                    <p className="New_Arrivals_Price_scss">$250</p>
-                </span>
-                <span>
-                    <img className="New_Arrivals_Image_Scss" src={bgwatch} alt="" />
-                    <p>Smart Watch</p>
-                    <p className="New_Arrivals_Price_scss">$350</p>
-                </span>
-                <span>
-                    <img className="New_Arrivals_Image_Scss" src={lipstick1} alt="" />
-                    <p>Lipstick</p>
-                    <p className="New_Arrivals_Price_scss">$15</p>
-                </span>
-                <span>
-                    <img className="New_Arrivals_Image_Scss" src={lipstick4} alt="" />
-                    <p>Green plant</p>
-                    <p className="New_Arrivals_Price_scss">$55</p>
-                </span>
-                <span>
-                    <img className="New_Arrivals_Image_Scss" src={lipstick3} alt="" />
-                    <p>Bonsai tree</p>
-                    <p className="New_Arrivals_Price_scss">$535</p>
-                </span> */}
             </span>
+            </Container>
         </div>
     )
 }

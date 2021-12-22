@@ -5,10 +5,12 @@ import {
   Data_Categories_Main,
 } from "./Categories_Main_Helper";
 import "./Categories_Main.scss";
+import Container from "../Components/Container";
 
 const Categories_Main = () => {
   return (
     <div>
+      <Container>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div className="Category_Heading">
           <AiFillAppstore className="Catergory_Icon" />
@@ -33,6 +35,7 @@ const Categories_Main = () => {
           );
         })}
       </div>
+      </Container>
     </div>
   );
 };

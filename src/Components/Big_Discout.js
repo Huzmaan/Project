@@ -2,12 +2,14 @@ import React from "react";
 import { GrGift } from "react-icons/gr";
 import "./Big_Discount.scss";
 import {IoIosArrowForward} from "react-icons/io";
+import Container from "../Components/Container"
 
 import {data} from "../Components/Big_Discount.Helper";
 const Big_Discout = () => {
   
   return (
     <div>
+      <Container>
       <div style={{display: 'flex', justifyContent:'space-between'}}>
       <span className="Big_Discount_Heading">
         <GrGift className="Big_Discount_Icon" background="green" />
@@ -33,6 +35,7 @@ const Big_Discout = () => {
           );
         })}
       </span>
+      </Container>
     </div>
   );
 };

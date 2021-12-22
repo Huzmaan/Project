@@ -1,6 +1,7 @@
 import './Header.scss';
 import './slider.scss';
 // import {useState} from "react";
+// import Container from './Components/Container';
 import Cart from './Components/Cart';
 import Header from "./Components/Header";
 import Slider from "./Components/Slider";

@@ -5,6 +5,7 @@ import { VscAccount } from "react-icons/vsc";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiFillAppstore } from "react-icons/ai";
 import logo from "../Images/logo.svg";
+import Container from "../Components/Container"
 
 const Header = () => {
   const [dropdown, setdropdown] = useState(false);
@@ -12,6 +13,8 @@ const Header = () => {
   return (
     <div>
       <div className="Header_Border">
+      <Container>
+        <div style={{display:"flex",justifyContent:"space-between"}}>
         <div className="Header_Border_div1">
           <p className="Header_Border_Text">
             <MdPhone  className="Phone_Icon"/>
@@ -33,7 +36,7 @@ const Header = () => {
             <option>EN</option>
             <option>BN</option>
             <option>HN</option>
-            <IoIosArrowDown />
+            {/* <IoIosArrowDown /> */}
           </select>
           <select className="Header_Border_Text1">
             <option>USD</option>
@@ -41,11 +44,15 @@ const Header = () => {
             <option>BDT</option>
             <option>INR</option>
 
-            <IoIosArrowDown />
+            {/* <IoIosArrowDown /> */}
           </select>
+          </div>
         </div>
+    </Container> 
+
       </div>
       <div className="Main_Header">
+      <Container>
         <div className="Header_Search">
           <img src={logo} alt="logo" />
           <div className="Search">
@@ -221,6 +228,7 @@ const Header = () => {
             <div className="DropDown">Back to Demos</div>
           </div>
         </div>
+        </Container>
       </div>
     </div>
   );
