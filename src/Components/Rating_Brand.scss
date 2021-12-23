@@ -12,9 +12,9 @@
         //     display: flex;
         //     // justify-content: space-between;
         // }
-        .Rating{
-            width: 100%;
-        }
+        // .Rating{
+        //     width: 100%;
+        // }
     }
     .rating_heading{
         display: flex;
@@ -45,7 +45,9 @@
 .Rating_Heading_Text{
     font-weight: 700;
     font-size:25px;
-    color: #2B3445
+    color: #2B3445;
+    position: relative;
+    left: 10px;
 }
 .Rating_AllCarts{
     display: flex;
@@ -106,7 +108,9 @@
 .Brand_Heading_Text{
     font-weight: 700;
     font-size:25px;
-    color: #2B3445
+    color: #2B3445;
+    position: relative;
+    left: 10px;
 }
 .Brand_Heading{
     display: flex;

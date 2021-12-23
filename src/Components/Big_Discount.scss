@@ -33,7 +33,9 @@
 .Big_Discout_Heading_Text{
     font-weight: 700;
     font-size:25px;
-    color: #2B3445
+    color: #2B3445;
+    position: relative;
+    left: 10px;
 }
 .Big_Discount_Heading{
     display: flex;

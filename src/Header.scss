@@ -51,6 +51,7 @@
   justify-content: center;
   align-items: center;
   padding :0px 10px;
+  font-size: 13px;
 }
 .Phone_Icon{
   font-size:20px; 
@@ -79,6 +80,7 @@ option:hover{
   justify-content:space-between;
   /* padding:2%;   */
   align-items:center;
+  padding: 0px 15px;
 }
 .Search{
   border: 1px solid lightgrey ;
@@ -125,7 +127,7 @@ option{
   /* border-radius: 50px; */
   display: flex;
   justify-content:space-evenly;
-  width:25%;
+  width:10%;
 }
 .Icon{
   // background: lightgray;
@@ -133,7 +135,7 @@ option{
      padding: 2%; 
     color:rgba(0, 0, 0, 0.54);
     border-radius: 50px;
-    width:6%; 
+    width:21%; 
     //  font-style: medium;
     cursor: pointer;
 
@@ -160,7 +162,8 @@ option:hover{
 }
 .Header_Container{
   display: flex;
-  justify-content:space-between
+  justify-content:space-between;
+  padding: 0px 15px;
 }
 .Header_Container2{
   /* padding:1em; */
@@ -221,6 +224,7 @@ option:hover{
 .Hover{
   padding-left: 1em;
   padding-right: 1em;
+  font-size: 13px;
 }
 .DropDown_Contain{
   display: none;

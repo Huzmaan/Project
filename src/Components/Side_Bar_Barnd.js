@@ -9,9 +9,9 @@ const Side_Bar_Brand = () => {
   return (
     <div className="Side_Bar_Brand_Main">
       <div className="Side_Bar_Brand_Shop_Heading">
-        <p  onClick={() => SetCurrentId(true)}>Brands</p>
-        <p>|</p>
-        <p onClick={() => SetCurrentId(false)}>Shops</p>
+        <h3  onClick={() => SetCurrentId(true)}>Brands</h3>
+        <h3>|</h3>
+        <h3 onClick={() => SetCurrentId(false)}>Shops</h3>
       </div>
       {currentId ? (
         <div>

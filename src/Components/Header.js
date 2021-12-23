@@ -1,7 +1,8 @@
 import { React, useState } from "react";
 import { MdPhone, MdOutlineEmail, MdSearch } from "react-icons/md";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
-import { VscAccount } from "react-icons/vsc";
+// import { VscAccount } from "react-icons/vsc";
+import {MdSupervisorAccount} from 'react-icons/md'
 import { BiShoppingBag } from "react-icons/bi";
 import { AiFillAppstore } from "react-icons/ai";
 import logo from "../Images/logo.svg";
@@ -79,7 +80,7 @@ const Header = () => {
           </div>
           <div className="Header_Icon">
             <p className="Icon">
-              <VscAccount />
+              <MdSupervisorAccount />
             </p>
             <p className="Icon">
               <BiShoppingBag />

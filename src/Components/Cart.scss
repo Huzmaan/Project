@@ -15,12 +15,13 @@
     .Price_Actual{
       color: red;
       inline-size:80px;
+      margin: 0;
       
     }
   }
   .Price_previous{
     color: gray;
-    
+    margin: 0;    
   }
 @media only screen and (max-width:945px){
   // .Main_Card1{
@@ -49,6 +50,12 @@
       // pointer-events: none;
       // font-size: 1.25rem;
       
+  }
+  .Counter{
+    display: block;
+    position: relative;
+    left: 94%;
+    top: -25px;
   }
   .Discount_Css{
     border-radius: 50px;

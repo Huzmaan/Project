@@ -5,7 +5,9 @@
 .New_Arrivals_Heading_Text{
     font-weight: 700;
     font-size:25px;
-    color: #2B3445
+    color: #2B3445;
+    position: relative;
+    left: 10px;
 }
 .New_Arrivals_Heading{
     display: flex;
