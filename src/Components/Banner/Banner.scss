@@ -1,0 +1,38 @@
+.banner_Scss{
+    display: flex;
+    // justify-content:space-between;
+    max-width: 1206px;
+    width: 100%;
+}
+.Banner{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    cursor: pointer;
+}
+.Banner-Light{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    cursor: pointer;
+    margin-left: 24px;   
+}
+@media only screen and (max-width:900px){
+    .Banner{
+        width: 100% !important;
+
+    }
+    .banner_Scss{
+        display: block !important;
+    }
+    .Banner-Light{
+        margin: 0;
+        width: 100%;
+    }
+}
