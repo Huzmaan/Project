@@ -1,0 +1,60 @@
+.New_Arrivals_Icon{
+    color:rgb(104, 201, 68);
+    font-size: xx-large;
+}
+@media only screen  and (max-width:1200px){
+    .New_Arrivals_All_Carts{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
+}
+@media only screen and (max-width:400px){
+    .New_Arrivals_All_Carts{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr)) !important;
+        margin: 0 !important;
+    }
+}
+.New_Arrivals_Heading_Text{
+    font-weight: 700;
+    font-size: 25px;
+    color: #2B3445;
+    position: relative;
+    left: 10px;
+    width: 100%;
+}
+.New_Arrivals_Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.New_Arrivals_Veiw_Scss{
+    color: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;  
+}
+.New_Arrivals_Image_Scss{
+    width:100%
+}
+.New_Arrivals_All_Carts{
+    display:flex;
+    background-color:white;
+    border-radius:8px;
+    // padding-top: 36px;
+    // margin: 20px ;
+    // padding-left: 36px;
+    padding: 16px;
+}
+
+.New_Arrivals_Price_scss{
+    color:#D23F57;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.New_Arrivals_Image_Scss:hover{
+    color:darkgrey
+}

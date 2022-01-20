@@ -1,0 +1,108 @@
+.MobilePhone_Heading_text {
+  font-weight: 700;
+  font-size: 25px;
+  color: #2b3445;
+  margin-left: 20px;
+}
+@media only screen and (max-width:600px){
+  .All_Carts{
+    display: block !important;
+    // grid-template-columns: repeat(1,minmax(0px,1fr))!important;
+    width: 100%;
+  }
+}
+@media only screen  and (max-width:1200px){
+  .Main_Card{
+    // width: 22em !important;
+  }
+  .All_Carts{
+    grid-template-columns: repeat(2,minmax(0px,1fr))!important;gap: 25px !important;
+    grid-template-rows: repeat(3,minmax(0px,1fr))!important;gap: 25px !important;
+  }
+}
+@media only screen and (max-width:600px){
+  .Main_Card{
+    margin: 20px 0px 0px 0px !important;
+    padding: 0 ;
+  }
+}
+.All_Carts {
+  display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    grid-gap: 25px;
+    gap: 25px;
+    width: 100%;
+  .Main_Card {
+    // min-width: 20%;
+    // width: 14em;
+    // box-shadow: grey 0px 0px 2px;
+    /* position: absolute; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 13px;
+    background-color: #ffff;
+    cursor: pointer;
+  }
+}
+.Main_Card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Discount_Css {
+  border-radius: 50px;
+  padding-left: 0px;
+  background-color: #d23f57;
+  width: 70px;
+  height: 27px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 12px;
+}
+.Card_Price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+  .Price_Actual {
+    color: #D23F57;
+    inline-size: 80px;
+    margin: 0;
+  }
+}
+.Price_Previous {
+  color: gray;
+  margin: 0;
+}
+.Plus_Icon {
+  fill: #d23f57;
+  font-size: 1.5rem;
+  border: 1px solid rgb(210, 63, 87, 0.5);
+  display: flex;
+  // left: 89%;
+  position: relative;
+  cursor: pointer;
+  top: 40px;
+  border-radius: 5px;
+  width: 1em;
+  height: 1em;
+}
+.Minus_Icon {
+  fill: #d23f57;
+    font-size: 1.5rem;
+    border: 1px solid rgba(210, 63, 87, 0.5);
+    display: flex;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    top: 8px;
+    width: 1em;
+    height: 1em;
+}
+.Plus_Icon:hover,
+.Minus_Icon:hover {
+  border: 1px solid#d23f57;
+}
