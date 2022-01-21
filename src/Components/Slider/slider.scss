@@ -128,3 +128,12 @@
        margin: 0;
      }
    }
+   .Slider_Main{
+     display: flex;
+     width: 100vw;
+     overflow: hidden;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    box-sizing: border-box;
+   }

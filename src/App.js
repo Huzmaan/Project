@@ -15,12 +15,13 @@ import Categories_Main from "./Components/Catergories_Main";
 import More_For_You from "./Components/More_For_You";
 import Deliver from "./Components/Deliver";
 import Footer from "./Components/Footer";
+import { Slider_Data } from "./Components/Helper/Slider.Helper";
 function App() {
   return (
     <div className="App">
       <div className="Header_Slider">
         <Header />
-        <Slider />
+        <Slider slides={Slider_Data} />
       </div>
       <div className="App1">
         <Cart />
