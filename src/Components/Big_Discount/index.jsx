@@ -1,33 +1,49 @@
-import React from "react";
+import React,{useState} from "react";
 import { GrGift } from "react-icons/gr";
 import "./Big_Discount.scss";
-import {IoIosArrowForward} from "react-icons/io";
+import {FiArrowLeftCircle,FiArrowRightCircle} from 'react-icons/fi';
 import Container from "../../Components/Container"
 import SectionHeaders from "../Header/SectionHeaders";
 
-import {data} from "../Helper/Big_Discount.Helper";
-const Big_Discout = () => {
+import {big_discout} from "../Helper/Big_Discount.Helper";
+const Big_Discout = ({slide}) => {
+  const [hello, setHello] = useState(0);
+  const length = slide.length;
+  console.log(slide)
+  // const ref = useRef(null);
   
+  const rigthSlide = () => {
+    setHello(hello === length - 1 ? 0 : hello + 1);
+  };
+  
+  const leftSlide = () => {
+    setHello(hello === 0 ? length - 1 : hello - 1);
+  };
+  console.log(hello);
+  if (!Array.isArray(slide) || slide.length <= 0) {
+    return null;
+  }
   return (
       <Container>
     <div>
+    <Container>
+       <div className="icon_Slider">
+          <FiArrowLeftCircle
+            className="Left-Arrow"
+            onClick={leftSlide}
+            />
+          <FiArrowRightCircle
+            className="Right-Arrow"
+            onClick={rigthSlide}
+            />
+        </div>
+        </Container>
      <SectionHeaders
      heading="Big Discounts"
      headerIcon={<GrGift className="Big_Discount_Icon" />}
      >
-      {/* <div style={{display: 'flex', justifyContent:'space-between'}}>
-      <div className="Big_Discount_Heading">
-        <GrGift className="Big_Discount_Icon" background="green" />
-        <h2 className="Big_Discout_Heading_Text">Big Discounts</h2>
-      </div>
-        <div className="Veiw_Scss">
-        <p >View all
-         <IoIosArrowForward/>
-        </p>
-        </div>
-        </div> */}
       <span className="Big_Discount_All_Carts">
-        {data?.map((item, index) => {
+        {big_discout?.map((item, index) => {
           return (
             <div className="Big_Discount_Carts" key={index}>
               <img className="Big_Discount_Img" src={item.image} />

@@ -8,14 +8,14 @@ import CameraSony from "../../Images/Camera_sony.png";
 import GameDevice from "../../Images/game_divce.png";
 import pune from "../../Images/pune.png";
 import Camera2 from "../../Images/camera-2.png";
-export const data = [
+export const big_discout = [
   { image: Headphone, description: "benX 2020",price: "$250",disPrice: "$250",},
   { image: Tv, description: "Tony TV 1080p",price: "$250",disPrice: "$250", },
   { image: ps4, description: "Tony PS4",price: "$250",disPrice: "$250"},
   { image:Camera, description: "Setgearr 2020",price: "$250",disPrice: "$250"},
   { image: CameraSony, description:"Tony BGB",price: "$250",disPrice: "$250"},
   { image:HomeAppliance , description:"RG Product ",price: "$250",disPrice: "$250"},
-  // { image:GameDevice , description:"Ranasonic 2019 ",price: "$250",disPrice: "$250"},
-  // { image:pune , description:"Pune HD ",price: "$250",disPrice: "$250"},
-  // { image:Camera2 , description:"Tony CCTV ",price: "$250",disPrice: "$250"},
+  { image:GameDevice , description:"Ranasonic 2019 ",price: "$250",disPrice: "$250"},
+  { image:pune , description:"Pune HD ",price: "$250",disPrice: "$250"},
+  { image:Camera2 , description:"Tony CCTV ",price: "$250",disPrice: "$250"},
 ];

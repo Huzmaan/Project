@@ -71,7 +71,34 @@
     margin-bottom: 5px;
 }
       
-  
+  .icon_Slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Left-arrow{
+      font-size: 3rem;
+      position: relative;
+      // bottom: 50px;
+      top: 285px;
+      right: 25px;
+      cursor: pointer;
+      background-color: #0F3460;
+      color: #fff;
+      border-radius: 50px;
+    }
+    .Right-arrow{
+      font-size: 3rem;
+      position: relative;
+      // bottom: 50px;
+      top: 285px;
+      cursor: pointer;
+      left: 25px;
+      background-color: #0F3460;
+      color: #fff;
+      border-radius: 50px;
+
+    }
+  }
   .Counter{
     align-items: center;
     // display: block;

@@ -105,7 +105,7 @@
       // margin-left: 35.656px;
       // margin-right: 35.656px;
       // max-height: 400px;
-      width: 100%;
+      width: 73%;
      }
 .sliderMain{
   display: flex;
@@ -163,9 +163,10 @@
   // font-size: 3rem;
   justify-content: center;
   align-items: center;
-  // margin: auto;
+  margin-bottom: 35px;
   position: relative;
-  top: 75px;
+  // top: 75px;
+  z-index: 1;
  }
  .right-arrow{
 //   position:absolute;

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import { IoIosFlash } from "react-icons/io";
 import { data } from "../Helper/Carts.Helper";
-import { BsPlus } from "react-icons/bs";
+import {FiArrowLeftCircle,FiArrowRightCircle} from 'react-icons/fi'
+import { BsPlus} from "react-icons/bs";
 import { AiOutlineMinus, AiFillHeart, AiFillEye } from "react-icons/ai";
+import Container from "../../Components/Container";
 import "./Cart.scss";
 import SectionHeaders from "../Header/SectionHeaders";
 function Increment(props) {
@@ -18,13 +20,41 @@ function Decrement(props) {
 function Display(props) {
   return props.currentId ? <p className="Counter">{props.message}</p> : "";
 }
-const Cart = () => {
+const Cart = ({slide}) => {
+   const [hello, setHello] = useState(0);
+  const length = slide.length;
+  console.log(slide)
+  // const ref = useRef(null);
+  
+  const rigthSlide = () => {
+    setHello(hello === length - 1 ? 0 : hello + 1);
+  };
+  
+  const leftSlide = () => {
+    setHello(hello === 0 ? length - 1 : hello - 1);
+  };
+  console.log(hello);
+  if (!Array.isArray(slide) || slide.length <= 0) {
+    return null;
+  }
   return (
     <div>
+      <Container>
+       <div className="icon_Slider">
+          <FiArrowLeftCircle
+            className="Left-arrow"
+            onClick={leftSlide}
+            />
+          <FiArrowRightCircle
+            className="Right-arrow"
+            onClick={rigthSlide}
+            />
+        </div>
+        </Container>
       <SectionHeaders
         heading="Flash Deals"
         headerIcon={<IoIosFlash className="Flash_Icon" />}
-      >
+        >
         <div className="All_Carts1">
           {data?.map((item, index) => {
             return <Cart1 item={item} index={index} />;
@@ -38,7 +68,8 @@ export default Cart;
 
 export const Cart1 = ({ item, index }) => {
   const [currentId, setCurrentId] = useState(0);
-
+  
+  
   const incrementCounter = () => setCurrentId(currentId + 1);
   const decrementCounter = () => {
     // if(currentId > 0)

@@ -56,6 +56,28 @@
     cursor: pointer;
     position: relative;
   }
+  .Left-Arrow{
+    font-size: 3rem;
+    position: relative;
+    top: 210px;
+    right: 15px;
+    cursor: pointer;
+    background-color: #0F3460;
+    color: #fff;
+    border-radius: 50px;
+    z-index: 1
+  }
+  .Right-Arrow{
+    font-size: 3rem;
+    position: relative;
+    top: 210px;
+    cursor: pointer;
+    left: 8px;
+    background-color: #0F3460;
+    color: #fff;
+    border-radius: 50px;
+    z-index: 1;
+  }
   .Catergory_Image{
     //   width:75%;
       cursor: pointer;

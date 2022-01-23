@@ -25,10 +25,20 @@ const Slider = ({ slides }) => {
     return null;
   }
   return (
-    <div style={{maxWidth:"1280px",margin:"auto"}}>
+    <div style={{maxWidth:"1280px",margin:"auto",}}>
     <div className="Slider_Main">
       <Container>
-        <div style={{overflow:"hidden"}}>
+        <div style={{overflow:"hidden",display:"flex",flexDirection:"column-reverse"}}>
+        <div className="Icon_Slider">
+          <BsFillArrowLeftCircleFill
+            className="left-arrow"
+            onClick={leftSlide}
+            />
+          <BsFillArrowRightCircleFill
+            className="right-arrow"
+            onClick={rigthSlide}
+            />
+        </div>
         <div
             className="sliderMain"
             style={{
@@ -44,6 +54,7 @@ const Slider = ({ slides }) => {
             >
           {Slider_Data?.map((item, index) => {
             return (
+              <>
               <div
               className={index === activeIndex ? "slide active" : "slide"}
               key={index}
@@ -64,25 +75,17 @@ const Slider = ({ slides }) => {
                       alt="Nike-Black"
                       />
                   </div>
+                  
                 </div>
               </div>
+              </>
             );
           })}
         </div>
         </div>
                   </Container>
-        <Container>
-                <div className="Icon_Slider">
-          <BsFillArrowLeftCircleFill
-            className="left-arrow"
-            onClick={leftSlide}
-            />
-          <BsFillArrowRightCircleFill
-            className="right-arrow"
-            onClick={rigthSlide}
-            />
-        </div>
-            </Container>
+        {/* <Container> */}
+            {/* </Container> */}
     </div>
     </div>
   );

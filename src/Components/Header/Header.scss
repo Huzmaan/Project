@@ -2,20 +2,20 @@
   font-family: Open Sans,Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
 }
 .App {
+  background-color: #f6f9fc;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   font-family: Open Sans,Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 .App1 {
-  background-color: #f6f9fc;  
   // background-color: #d23f57;
-  padding-top: 54px;
+  // padding-top: 54px;
   font-family: Open Sans,Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   // max-width: 1205px;
   // background-color:white;
 }
 .Heading_Flash{
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .Logo {
   // width: 100px;
@@ -119,7 +119,9 @@
     // padding-right: 20px;
   }
 }
-
+.Header_Slider{
+  background-color: white;
+}
 .Main_Header {
   // display: inline-table;
   align-items: center;
@@ -131,7 +133,7 @@
   width: 100%;
   z-index: 1;
   box-shadow: 10px 5px 14px #f6f9fc;
-  /* background-color: white; */
+  //  background-color: #f6f9fc;
   /* box-shadow: inherit; */
 }
 .Mobile_Reponsive {

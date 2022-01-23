@@ -16,6 +16,10 @@ import More_For_You from "./Components/More_For_You";
 import Deliver from "./Components/Deliver";
 import Footer from "./Components/Footer";
 import { Slider_Data } from "./Components/Helper/Slider.Helper";
+import { data } from "./Components/Helper/Carts.Helper";
+import {Categorie} from "./Components/Helper/Catergory.Helper";
+import {big_discout} from "./Components/Helper/Big_Discount.Helper";
+
 function App() {
   return (
     <div className="App">
@@ -23,12 +27,12 @@ function App() {
         <Header />
         <Slider slides={Slider_Data} />
       </div>
-      <div className="App1">
-        <Cart />
-        <Categories />
+      {/* <div className="App1"> */}
+        <Cart  slide ={data}/>
+        <Categories  slide={Categorie}/>
         <Rating_Brand />
         <New_Arrivals />
-        <Discount />
+        <Discount  slide={big_discout}/>
         <Side_Bar_Car />
         <Side_Bar_Brands_MobilePhone />
         <Banner />
@@ -39,7 +43,7 @@ function App() {
         <Footer />
         {/* <LoginSignup /> */}
       </div>
-    </div>
+    // </div>
   );
 }
 
