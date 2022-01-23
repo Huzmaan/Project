@@ -18,15 +18,15 @@ const Header_Border = () => {
         <img className="logo_Responsive" src={logoWhite} alt="logoWhite" />
             <div className="Header_Border_div1">
               <div className="Header_Border_divs">
-                <p>
+                <i>
                   <MdPhone className="Phone_Icon" />
-                </p>
-                <p className="Header_Border_Text">+88012 3456 7894</p>
+                </i>
+                <i className="Header_Border_Text">+88012 3456 7894</i>
               </div>
               <div className="Header_Border_div">
-                <p>
+                <i>
                   <MdOutlineEmail className="Phone_Icon" />
-                </p>
+                </i>
                 <p className="Header_Border_Text">support@ui-lib.com</p>
               </div>
             </div>
