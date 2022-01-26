@@ -101,6 +101,7 @@
   }
   .Counter{
     align-items: center;
+    user-select: none;
     // display: block;
     // position: relative;
     // left: 13em;
@@ -150,6 +151,7 @@
     // width: 290px;
     // height: 290px;
     width: 100%;
+    user-select: none;
   }
   // .Main_Card:hover{
   //   box-shadow:5px 5px 5px #aeb0b38a;
@@ -170,6 +172,7 @@
     font-size:25px;
     color: #2B3445;
     margin-left: 6px;
+    user-select: none;
   }
   .Hover_Icon:hover{
     cursor: pointer;
@@ -182,6 +185,7 @@
     display:flex;
     align-items: center;
     cursor: pointer;
+    user-select: none;
     // position: absolute;
     // left: 93%;
     // top: 275%;

@@ -1,0 +1,41 @@
+.main_bike {
+  background-color: white;
+  width: 298px;
+  // margin: 34px;
+  padding: 20px 0px 0px 23px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  .bike-Div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 0px 9px;
+    .bike-div:hover {
+      color: red;
+    }
+    .bike-icon {
+      margin-right: 8px;
+      font-size: 30px;
+    }
+    .bike-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .Hover-Container {
+      display: none;
+      position: absolute;
+      margin-left: 305px;
+      top: 0;
+    }
+    &:hover {
+      .Hover-Container {
+        display: block;
+      }
+    }
+  }
+}
