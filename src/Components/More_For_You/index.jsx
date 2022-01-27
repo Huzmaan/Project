@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiStar } from 'react-icons/fi';
 import { BsPlus } from 'react-icons/bs';
 import { IoIosArrowForward } from 'react-icons/io';
-import { AiOutlineMinus, AiFillEye, AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineMinus, AiFillEye,AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import { Data_More_For_You } from '../Helper/More_For_You_Helper';
 import Container from "../../Components/Container";
 import SectionHeaders from '../Header/SectionHeaders';
@@ -58,6 +58,7 @@ const More_For_You = () => {
 export default More_For_You
 
 export const Mobile = ({ item, index }) => {
+  const [heart,setHeart]= useState(false);
   const [currentId, setCurrentId] = useState(0);
   const incrementCounter = () => setCurrentId(currentId + 1);
   let decrementCounter = () => setCurrentId(currentId - 1);
@@ -68,9 +69,20 @@ export const Mobile = ({ item, index }) => {
     <div className="Main_Card" key={index}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <p className="Discount_Css"> {item.discount}</p>
-        <div className="Hover_Icon">
-          <AiFillEye />
-          <AiOutlineHeart /></div>
+        <div className='hover_flex'>
+        <i>
+          <AiFillEye style={{fontSize:"21px"}}/></i>
+        <div onClick={() => setHeart((prev) => !prev)} 
+        className="Hover_Icon">
+          {heart?(
+              <AiFillHeart style={{color:"red",fontSize:"21px"}}/>
+              ):(
+                <i >
+    
+              <AiOutlineHeart style={{fontSize:"21px"}}/>   </i>
+          )}
+        </div>
+        </div>
       </div>
       <img src={item.image} width="100%" />
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>

@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { GrGift } from "react-icons/gr";
 import "./Big_Discount.scss";
-import {FiArrowLeftCircle,FiArrowRightCircle} from 'react-icons/fi';
+import {AiOutlineArrowRight,AiOutlineArrowLeft}from "react-icons/ai";
 import Container from "../../Components/Container"
 import SectionHeaders from "../Header/SectionHeaders";
 
@@ -28,11 +28,11 @@ const Big_Discout = ({slide}) => {
     <div>
     <Container>
        <div className="icon_Slider">
-          <FiArrowLeftCircle
+          <AiOutlineArrowLeft
             className="Left-Arrow"
             onClick={leftSlide}
             />
-          <FiArrowRightCircle
+          <AiOutlineArrowRight
             className="Right-Arrow"
             onClick={rigthSlide}
             />

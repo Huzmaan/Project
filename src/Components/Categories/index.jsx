@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import { AiFillAppstore } from "react-icons/ai";
-import {FiArrowLeftCircle,FiArrowRightCircle} from 'react-icons/fi';
+import { AiFillAppstore,AiOutlineArrowLeft,AiOutlineArrowRight } from "react-icons/ai";
 // import { IoIosArrowForward } from "react-icons/io";
 import "./Catergory.scss";
 import { Categorie } from "../Helper/Catergory.Helper";
@@ -27,11 +26,11 @@ const Catergory = ({slide}) => {
     <div className="Main_Category">
        <Container>
        <div className="icon_Slider">
-          <FiArrowLeftCircle
+          <AiOutlineArrowLeft
             className="Left-Arrow"
             onClick={leftSlide}
             />
-          <FiArrowRightCircle
+          <AiOutlineArrowRight
             className="Right-Arrow"
             onClick={rigthSlide}
             />

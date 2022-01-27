@@ -3,10 +3,11 @@ import React, { useState, useRef } from "react";
 import Container from "../../Components/Container";
 import { Slider_Data } from "../Helper/Slider.Helper";
 import "./slider.scss";
-import {
-  BsFillArrowRightCircleFill,
-  BsFillArrowLeftCircleFill,
-} from "react-icons/bs";
+// import {
+//   BsFillArrowRightCircleFill,
+//   BsFillArrowLeftCircleFill,
+// } from "react-icons/bs";
+import {AiOutlineArrowRight,AiOutlineArrowLeft} from "react-icons/ai";
 
 const Slider = ({ slides }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,11 +31,11 @@ const Slider = ({ slides }) => {
       <Container>
         <div style={{overflow:"hidden",display:"flex",flexDirection:"column-reverse"}}>
         <div className="Icon_Slider">
-          <BsFillArrowLeftCircleFill
+          <AiOutlineArrowLeft
             className="left-arrow"
             onClick={leftSlide}
             />
-          <BsFillArrowRightCircleFill
+          <AiOutlineArrowRight
             className="right-arrow"
             onClick={rigthSlide}
             />

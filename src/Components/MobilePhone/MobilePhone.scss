@@ -26,6 +26,10 @@
     padding: 0 ;
   }
 }
+.hover_flex{
+  display: flex;
+  flex-direction: column;
+}
 .All_Carts {
   display: grid;
     grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
@@ -42,6 +46,7 @@
     margin: 20px 13px;
     background-color: #ffff;
     cursor: pointer;
+    user-select: none;
   }
 }
 .Main_Card:hover {
