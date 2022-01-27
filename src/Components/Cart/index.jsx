@@ -33,6 +33,7 @@ const Cart = ({slide}) => {
   const leftSlide = () => {
     setHello(hello === 0 ? length - 1 : hello - 1);
   };
+ 
   console.log(hello);
   if (!Array.isArray(slide) || slide.length <= 0) {
     return null;
@@ -75,7 +76,8 @@ export const Cart1 = ({ item, index }) => {
     // if(currentId > 0)
     setCurrentId(currentId - 1);
   };
-
+  const hearthover=()=>{
+  }
   return (
     <div className="Main_Card1" key={index}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -83,8 +85,8 @@ export const Cart1 = ({ item, index }) => {
         <div className="Hover_Icon">
           <i>
             <AiFillEye /></i>
-          <i>
-            <AiFillHeart /></i>
+          <i >
+          <AiFillHeart onClick={}/>   </i>
         </div>
       </div>
       <img src={item.image} className="Cart_Img" />

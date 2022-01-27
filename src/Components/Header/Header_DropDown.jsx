@@ -28,8 +28,8 @@ const Header_DropDown = () => {
                     >
                       Sale Pages
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">Version 1</div>
                           <div className="DropDown_Item">Version 2</div>
                         </div>}
@@ -40,8 +40,8 @@ const Header_DropDown = () => {
                     >
                       Vendor
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">All Vendors</div>
                           <div className="DropDown_Item">Vendor Store</div>
                         </div>}
@@ -52,8 +52,8 @@ const Header_DropDown = () => {
                     >
                       Shop
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">Search Product</div>
                           <div className="DropDown_Item">Single Product</div>
                           <div className="DropDown_Item">Cart</div>
@@ -79,8 +79,8 @@ const Header_DropDown = () => {
                     >
                       Orders
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">Order List</div>
                           <div className="DropDown_Item">Order Details</div>
                         </div>}
@@ -91,8 +91,8 @@ const Header_DropDown = () => {
                     >
                       Profile
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className=" DropDown_Contain">
+                      {Selected ||
+                        <div className=" dropDown_contain">
                           <div className="DropDown_Item">View Profile</div>
                           <div className="DropDown_Item">Edit Profile</div>
                         </div>}
@@ -103,8 +103,8 @@ const Header_DropDown = () => {
                     >
                       Address
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">Address List</div>
                           <div className="DropDown_Item">Add Address</div>
                         </div>}
@@ -115,8 +115,8 @@ const Header_DropDown = () => {
                     >
                       Support Ticket
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">All Ticket</div>
                           <div className="DropDown_Item">Ticket Details</div>
                         </div>}
@@ -135,8 +135,8 @@ const Header_DropDown = () => {
                     >
                       Product
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">All Product</div>
                           <div className="DropDown_Item">Add/Edit Product</div>
                         </div>}
@@ -147,8 +147,8 @@ const Header_DropDown = () => {
                     >
                       Orders
                       <IoIosArrowForward />
-                      {Selected &&
-                        <div className="DropDown_Contain">
+                      {Selected ||
+                        <div className="dropDown_contain">
                           <div className="DropDown_Item">All Order</div>
                           <div className="DropDown_Item">Order Details</div>
                         </div>}

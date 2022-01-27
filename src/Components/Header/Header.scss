@@ -422,6 +422,7 @@ option {
   background-color: #d23f57;
   color: #fff;
   margin: 0px 0px 50px 110px;
+  user-select: none;
 }
 .categories_icon {
   color: #000;
@@ -485,6 +486,7 @@ option:hover {
   align-items: center;
   cursor: pointer;
   justify-content: space-between;
+  position: relative;
 }
 .Header_Container2 .DropDown:hover {
   color: red;
@@ -509,9 +511,11 @@ option:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .DropDown .DropDown_Contain .DropDown_Item:hover {
-  background-color: #f6f9fc;
+  color: #D23F57;
+  background: #FCE9EC;
 }
 .DropDown_Item:hover {
   color: red;
@@ -563,6 +567,18 @@ option:hover {
       display: block;
     }
   }
+}
+.DropDown_Item{
+
+.dropDown_contain{
+  display: none;
+  position: absolute;
+  &:hover{
+    .dropDown_contain{
+      display: block;
+    }
+  }
+}
 }
 .Title {
   padding-left: 0.75rem;
