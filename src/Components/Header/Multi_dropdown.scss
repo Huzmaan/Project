@@ -26,8 +26,10 @@
         }
         .dropdown-title {
           margin: 0;
+          color: black;
+
         }
-        .dropdown-title:hover {
+        .dropdown-title:hover,.dropdown-heading:hover {
           color: #d23f57;
         }
       }

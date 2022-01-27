@@ -11,12 +11,10 @@
   .bike-Div {
     display: flex;
     align-items: center;
+    color: black;
     cursor: pointer;
     justify-content: space-between;
     padding: 0px 9px;
-    .bike-div:hover {
-      color: red;
-    }
     .bike-icon {
       margin-right: 8px;
       font-size: 30px;
@@ -38,4 +36,8 @@
       }
     }
   }
+}
+.bike-Div:hover {
+  color: #D23F57;
+background: #FCE9EC;
 }

@@ -18,13 +18,13 @@ export const cate_btn = [
     description: "Fashion",
     icon: <GiClothes />,
     view: <IoIosArrowForward />,
-    hover: <MultiDropdown />
+    // hover: <MultiDropdown />
   },
   {
     description: "Electronics",
     icon: <AiOutlineLaptop />,
     view: <IoIosArrowForward />,
-    hover: <MultiDropdown />
+    // hover: <MultiDropdown />
   },
   {
     description: "Bikes",
@@ -36,7 +36,7 @@ export const cate_btn = [
     description: "Home & Garden",
     icon: <GiFlowerPot />,
     view: <IoIosArrowForward />,
-    hover: <MultiDropdown />
+    // hover: <MultiDropdown />
   },
   { description: "Gifts", icon: <BsGift />, view: <IoIosArrowForward /> },
   { description: "Music", icon: <GiUltrasound /> },

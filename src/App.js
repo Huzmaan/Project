@@ -19,11 +19,12 @@ import { Slider_Data } from "./Components/Helper/Slider.Helper";
 import { data } from "./Components/Helper/Carts.Helper";
 import { Categorie } from "./Components/Helper/Catergory.Helper";
 import { big_discout } from "./Components/Helper/Big_Discount.Helper";
+import ManDropdown from "./Components/Header/man_dropdown";
 
 function App() {
   return (
     <div className="App">
-      <div className="Header_Slider">
+      {/* <div className="Header_Slider">
         <Header />
         <Slider slides={Slider_Data} />
       </div>
@@ -39,7 +40,8 @@ function App() {
       <Categories_Main />
       <More_For_You />
       <Deliver />
-      <Footer />
+      <Footer /> */}
+      <ManDropdown/>
     </div>
   );
 }

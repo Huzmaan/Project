@@ -6,12 +6,14 @@ const ManDropdown = () => {
 
       {Mandropdown?.map((item,index)=>{
           return(
-              <div key={index}>
-                  <h5>{item.heading}</h5>
-                  <p>{item.FirstTitle}</p>
-                  <p>{item.SecondTitle}</p>
-                  <p>{item.ThirdTitle}</p>
-                  <p>{item.FourthTitle}</p>
+              <div className="multi_dropdown" key={index}>
+                  <div className="multidropdown">
+                  <h5 className="dropdown-heading">{item.heading}</h5>
+                  <p className="dropdown-title">{item.FirstTitle}</p>
+                  <p className="dropdown-title">{item.SecondTitle}</p>
+                  <p className="dropdown-title">{item.ThirdTitle}</p>
+                  <p className="dropdown-title">{item.FourthTitle}</p>
+              </div>
               </div>
 
           )
