@@ -2,7 +2,7 @@
   user-select: none;
   font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    user-select: none;
+  user-select: none;
 }
 .App {
   background-color: #f6f9fc;
@@ -489,12 +489,15 @@ option:hover {
   justify-content: space-between;
   position: relative;
 }
+.dropDown_span {
+  position: absolute;
+}
 .Header_Container2 .DropDown:hover {
   color: red;
 }
 .DropDown .DropDown_Contain {
   position: absolute;
-  top: 110%;
+  top: 20px;
   padding: 10px;
   background-color: #fff;
   box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
@@ -503,9 +506,9 @@ option:hover {
   z-index: 1;
   min-width: 230px;
   border-radius: 10px;
-  margin-top: 10px;
+  // margin-top: 30px;
 }
-.DropDown .DropDown_Contain .DropDown_Item {
+.DropDown .DropDown_Contain .DropDown_Item,.dropdownitems {
   padding: 10px;
   cursor: pointer;
   transition: all 0.2s;
@@ -514,12 +517,14 @@ option:hover {
   align-items: center;
   position: relative;
 }
-.DropDown .DropDown_Contain .DropDown_Item:hover {
-  color: #D23F57;
-  background: #FCE9EC;
-}
-.DropDown_Item:hover {
-  color: red;
+.DropDown .DropDown_Contain  .DropDown_Item:hover,.dropdownitems:hover {
+  color: #d23f57;
+  background: #fce9ec;
+  &:hover{
+    .dropDown_containers{
+      display: block;
+    }
+  }
 }
 .Categories_btn {
   display: flex;
@@ -569,18 +574,26 @@ option:hover {
     }
   }
 }
-.DropDown_Item{
-
-.dropDown_contain{
+.dropDown_containers {
   display: none;
-  position: absolute;
-  &:hover{
-    .dropDown_contain{
+  top: 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+    color: #333;
+    z-index: 1;
+    min-width: 230px;
+    border-radius: 10px;
+    /* margin-top: 30px; */
+    position: absolute;
+    left: 246px;
+  &:hover {
+    .dropDown_containers {
       display: block;
     }
   }
 }
-}
+
 .Title {
   padding-left: 0.75rem;
 }
@@ -602,8 +615,8 @@ option:hover {
   color: #000;
 }
 .Categories_Type:hover {
-  color: #D23F57;
-  background: #FCE9EC;
+  color: #d23f57;
+  background: #fce9ec;
 }
 .categories1 {
   position: absolute;
