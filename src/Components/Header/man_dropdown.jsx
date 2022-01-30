@@ -21,7 +21,7 @@ const ManDropdown = () => {
 
           )
       })}
-  </div>;
+  </div>
   <img className="man_dropdown_img" src={shopping} alt="" />
   </div>
   </>

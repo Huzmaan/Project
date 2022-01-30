@@ -6,38 +6,10 @@ import Container from "../../Components/Container"
 import SectionHeaders from "../Header/SectionHeaders";
 
 import {big_discout} from "../Helper/Big_Discount.Helper";
-const Big_Discout = ({slide}) => {
-  const [hello, setHello] = useState(0);
-  const length = slide.length;
-  console.log(slide)
-  // const ref = useRef(null);
-  
-  const rigthSlide = () => {
-    setHello(hello === length - 1 ? 0 : hello + 1);
-  };
-  
-  const leftSlide = () => {
-    setHello(hello === 0 ? length - 1 : hello - 1);
-  };
-  console.log(hello);
-  if (!Array.isArray(slide) || slide.length <= 0) {
-    return null;
-  }
+const Big_Discout = () => {
   return (
       <Container>
     <div>
-    <Container>
-       <div className="icon_Slider">
-          <AiOutlineArrowLeft
-            className="Left-Arrow"
-            onClick={leftSlide}
-            />
-          <AiOutlineArrowRight
-            className="Right-Arrow"
-            onClick={rigthSlide}
-            />
-        </div>
-        </Container>
      <SectionHeaders
      heading="Big Discounts"
      headerIcon={<GrGift className="Big_Discount_Icon" />}

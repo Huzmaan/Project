@@ -1,27 +1,27 @@
 export const Mandropdown = [
   {
-    heading: "man Clothes",
+    heading: "Man Clothes",
     FirstTitle: "Shirt",
     SecondTitle: "T-Shirt",
     ThirdTitle: "Pent",
     FourthTitle: "Undwerwear"
   },
   {
-    heading: "man Clothes",
+    heading: "Man Clothes",
     FirstTitle: "Shirt",
     SecondTitle: "T-Shirt",
     ThirdTitle: "Pent",
     FourthTitle: "Undwerwear"
   },
   {
-    heading: "man Clothes",
+    heading: "Man Clothes",
     FirstTitle: "Shirt",
     SecondTitle: "T-Shirt",
     ThirdTitle: "Pent",
     FourthTitle: "Undwerwear"
   },
   {
-    heading: "man Clothes",
+    heading: "Man Clothes",
     FirstTitle: "Shirt",
     SecondTitle: "T-Shirt",
     ThirdTitle: "Pent",

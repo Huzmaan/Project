@@ -172,24 +172,24 @@
 //   position:absolute;
 //   top: 100%;
   // right: 32px;
-  font-size: 3rem;
+  font-size: 19px;
   z-index: 10;
-  color: #000;
+  color: #0F3460 ;
   cursor: pointer;
   user-select: none;
-  padding-top: 15px;
-  // padding-right: 48%;
+  padding-top: 0px;
+    border: 2px solid;
+    border-radius: 50px
 }
 .left-arrow{
-//  position:absolute;
-//  top: 100%;
-//  left: 40%;
- font-size: 3rem;
- z-index: 10;
- margin-right: 100px;
- color: #000;
- cursor: pointer;
- user-select: none;
- padding-top: 15px;
-//  padding-left: 35%;
+  font-size: 19px;
+  z-index: 10;
+  margin-right: 20px;
+  color: #0F3460;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  padding-top: 0px;
+  border: 2px solid;
+  border-radius: 50px
 }

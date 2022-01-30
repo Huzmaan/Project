@@ -19,38 +19,26 @@ function Decrement(props) {
 function Display(props) {
   return props.currentId ? <p className="Counter">{props.message}</p> : "";
 }
-const Cart = ({slide}) => {
-   const [hello, setHello] = useState(0);
-  const length = slide.length;
-  console.log(slide)
-  // const ref = useRef(null);
+const Cart = () => {
+  //  const [hello, setHello] = useState(0);
+  // const length = slide.length;
+  // console.log(slide)
+  // // const ref = useRef(null);
   
-  const rigthSlide = () => {
-    setHello(hello === length - 1 ? 0 : hello + 1);
-  };
+  // const rigthSlide = () => {
+  //   setHello(hello === length - 1 ? 0 : hello + 1);
+  // };
   
-  const leftSlide = () => {
-    setHello(hello === 0 ? length - 1 : hello - 1);
-  };
+  // const leftSlide = () => {
+  //   setHello(hello === 0 ? length - 1 : hello - 1);
+  // };
  
-  console.log(hello);
-  if (!Array.isArray(slide) || slide.length <= 0) {
-    return null;
-  }
+  // console.log(hello);
+  // if (!Array.isArray(slide) || slide.length <= 0) {
+  //   return null;
+  // }
   return (
     <div>
-      <Container>
-       <div className="icon_Slider">
-          <AiOutlineArrowLeft
-            className="Left-arrow"
-            onClick={leftSlide}
-            />
-          <AiOutlineArrowRight
-            className="Right-arrow"
-            onClick={rigthSlide}
-            />
-        </div>
-        </Container>
       <SectionHeaders
         heading="Flash Deals"
         headerIcon={<IoIosFlash className="Flash_Icon" />}

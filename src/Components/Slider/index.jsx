@@ -7,7 +7,7 @@ import "./slider.scss";
 //   BsFillArrowRightCircleFill,
 //   BsFillArrowLeftCircleFill,
 // } from "react-icons/bs";
-import {AiOutlineArrowRight,AiOutlineArrowLeft} from "react-icons/ai";
+import {GoPrimitiveDot} from "react-icons/go";
 
 const Slider = ({ slides }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,11 +31,11 @@ const Slider = ({ slides }) => {
       <Container>
         <div style={{overflow:"hidden",display:"flex",flexDirection:"column-reverse"}}>
         <div className="Icon_Slider">
-          <AiOutlineArrowLeft
+          <GoPrimitiveDot
             className="left-arrow"
             onClick={leftSlide}
             />
-          <AiOutlineArrowRight
+          <GoPrimitiveDot
             className="right-arrow"
             onClick={rigthSlide}
             />
