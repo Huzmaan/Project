@@ -13,7 +13,7 @@ const SectionHeaders = ({ children, headerIcon, heading }) => {
             <h2 className="Cart_Heading_Text">{heading}</h2>
           </div>
           <div className="Veiw_Scss">
-            <p>
+            <p style={{display:"flex"}}>
               View all
               <IoIosArrowForward />
             </p>

@@ -62,6 +62,7 @@ const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
                     <IoIosArrowForward className="Categories_Icon" />
                     {inCatergory && (
                       <div className="Catergories_button">
+                        <li onClick={() => sethelloWorld("All Categories")} className="catergories_title">All Categories</li>
                         <li onClick={() => sethelloWorld("Car")} className="catergories_title">Car</li>
                         <li onClick={() => sethelloWorld("Clothes")} className="catergories_title">Clothes</li>
                         <li onClick={() => sethelloWorld("Electronics")} className="catergories_title">Electronics</li>

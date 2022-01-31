@@ -185,7 +185,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: none;
   white-space: normal;
   height: 18px;
@@ -193,6 +193,7 @@
   margin: 0 0 0 10px;
   // width: 102.3px;
   height: 18px;
+  line-height: 1.5;
 }
 .Phone_Icon {
   width: 20px;
@@ -348,7 +349,7 @@ option:hover {
   background-color: white;
   list-style: none;
   position: absolute;
-  margin-top: 18em;
+  margin-top: 20em;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   padding: 10px;
@@ -513,7 +514,7 @@ option:hover {
   // font-weight: 500;
   color: #333;
   z-index: 1;
-  min-width: 230px;
+  min-width: 200px;
   border-radius: 10px;
   // margin-top: 30px;
 }
@@ -587,7 +588,7 @@ option:hover {
 }
 .dropDown_containers {
   display: none;
-  top: 0;
+  top: 10px;
     padding: 10px;
     background-color: #fff;
     box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
@@ -597,7 +598,7 @@ option:hover {
     border-radius: 10px;
     /* margin-top: 30px; */
     position: absolute;
-    left: 246px;
+    left: 220px;
   &:hover {
     .dropDown_containers {
       display: block;
