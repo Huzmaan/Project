@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MdSearch } from "react-icons/md";
-import { IoIosArrowDown, IoMdContact } from "react-icons/io";
+import { IoMdContact } from "react-icons/io";
 import logo from "../../Images/logo.svg";
 import { BiShoppingBag } from "react-icons/bi";
 import Container from "../../Components/Container";

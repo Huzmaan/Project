@@ -3,16 +3,20 @@ import {
   Data_Side_Bar_Brands,
   Data_Side_Bar_Shops,
 } from "../Helper/Side_Bar_Brands_Helper";
-import "./Side_Bar_Brand.scss"
+import "./Side_Bar_Brand.scss";
 
 const Side_Bar_Brand = () => {
   const [currentId, SetCurrentId] = useState(false);
   return (
     <div className="Side_Bar_Brand_Main">
       <div className="Side_Bar_Brand_Shop_Heading">
-        <h3 className="Brands" onClick={() => SetCurrentId(true)}>Brands</h3>
+        <h3 className="Brands" onClick={() => SetCurrentId(true)}>
+          Brands
+        </h3>
         <h3 style={{ margin: "0" }}>|</h3>
-        <h3 className="Shops" onClick={() => SetCurrentId(false)}>Shops</h3>
+        <h3 className="Shops" onClick={() => SetCurrentId(false)}>
+          Shops
+        </h3>
       </div>
       {currentId ? (
         <div>
@@ -58,4 +62,3 @@ const Side_Bar_Brand = () => {
 };
 
 export default Side_Bar_Brand;
-

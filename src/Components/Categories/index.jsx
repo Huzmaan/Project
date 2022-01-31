@@ -1,9 +1,7 @@
-import React, {useState} from "react";
-import { AiFillAppstore,AiOutlineArrowLeft,AiOutlineArrowRight } from "react-icons/ai";
-// import { IoIosArrowForward } from "react-icons/io";
+import React from "react";
+import { AiFillAppstore} from "react-icons/ai";
 import "./Catergory.scss";
 import { Categorie } from "../Helper/Catergory.Helper";
-import Container from "../../Components/Container";
 import SectionHeaders from "../Header/SectionHeaders";
 const Catergory = () => {
   return (
@@ -32,7 +30,7 @@ const Catergory = () => {
                       <div className="Catergories_Main_Div"
                       >
                         <div className="Brands_Carts_Hover">
-                          <img className="Catergory_Image" src={item.image} />
+                          <img className="Catergory_Image" src={item.image}  alt="image"/>
                           <div className="Brand"></div>
                         </div>
                       </div>

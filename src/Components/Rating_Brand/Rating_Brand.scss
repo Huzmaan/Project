@@ -1,219 +1,176 @@
-    .rating-brand{
-        display: flex;
-    }
-    .Rating {
-        // width: 50%;
-    }
-    @media only screen and (max-width:830px){
-        .Rating_Div{
-            margin-right: 0 !important;
-        }
-    }
-    @media only screen and (max-width:395px){
-        .Brands_Carts{
-            display: grid !important;
-            grid-template-columns: repeat(auto-fill,minmax(180px,1fr)) !important;
-        }
-        // .Rating_AllCarts{
-        //     display: grid !important;
-        //     grid-template-columns: repeat(auto-fill,minmax(180px,1fr)) !important;
-        // }
-    }
-    @media only screen  and(max-width:1200px){
-        .rating-brand{
-            display: block;
-        }
-        // .Rating_AllCarts{
-        //  display: grid !important;
-        //  grid-template-columns: repeat(auto-fill,minmax(250px,1fr)) ;
-        // }
-        // .Rating_Heading{
-        //     display: flex;
-        //     // justify-content: space-between;
-        // }
-        .Main_Brands{
-         margin-left: 0px!important;  
-        }
-        .Brands_Carts{
-            display: grid !important;
-            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-        }
-        .Brand_Veiw_Scss{
-            color: gray;
+.rating-brand {
+  display: flex;
+}
+@media only screen and (max-width: 830px) {
+  .Rating_Div {
+    margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .Brands_Carts {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+  }
+}
+@media only screen and(max-width:1200px) {
+  .rating-brand {
+    display: block;
+  }
+  .Main_Brands {
+    margin-left: 0px !important;
+  }
+  .Brands_Carts {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .Brand_Veiw_Scss {
+    color: gray;
     display: flex;
     align-items: center;
-    margin-left: 59%!important;
-        }
-    }
-    @media only screen and (max-width:1000px){
-        .Rating_Div{
-            width: 48%;
-            margin: auto;
-        }
-        .Rating_AllCarts{
-            display: flex;
-            flex-wrap: wrap;
-        }
-    }
-    .Rating_Texts{
-        display: inline;
-        align-items: center;
-        // margin: 0px 30px;
-    }
-    .rating_heading{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .Rating_Veiw_Scss{
-        color: gray;
-        display:flex;
-        align-items: center;
-        // position: absolute;
-        // left: 93%;
-        // top: 275%;
-        margin-left: 50%;   
+    margin-left: 59% !important;
+  }
 }
-.Main_Brands{
-    // margin-left: 60px;
-}
-.Rating_Heading{
+@media only screen and (max-width: 1000px) {
+  .Rating_Div {
+    width: 48%;
+    margin: auto;
+  }
+  .Rating_AllCarts {
     display: flex;
-    justify-content: space-between;
-    // align-items: center;
+    flex-wrap: wrap;
+  }
 }
-.Rating_Icon{
-    color: rgb(250, 180, 0);
-    font-size: 1.5em;;
+.Rating_Texts {
+  display: inline;
+  align-items: center;
 }
-.Rating_Heading_Text{
-    font-weight: 700;
-    font-size:25px;
-    color: #2B3445;
-    position: relative;
-    left: 10px;
+.rating_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Rating_AllCarts{
-    display: flex;
-    max-width: 100%;
-    background-color: white;
-    padding: 16px ;
-    border-radius: 8px;
-    // padding-left: 36px;
-    // margin-right:-71px;
-    
+.Rating_Veiw_Scss {
+  color: gray;
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
 }
 
-.Rating_Image{
-    width:100%;
-    border-radius: 6px;
+.Rating_Heading {
+  display: flex;
+  justify-content: space-between;
 }
-.Rating_Icons{
-    color:#faaf00;
-    display: flex;
-    align-items: center;
-    margin: 7.2px;
-    justify-content: center;
+.Rating_Icon {
+  color: rgb(250, 180, 0);
+  font-size: 1.5em;
 }
-.Rating_Icons_Rate{
-    color:black
+.Rating_Heading_Text {
+  font-weight: 700;
+  font-size: 25px;
+  color: #2b3445;
+  position: relative;
+  left: 10px;
 }
-.Rating_Carts{
-    // margin: -22px;
+.Rating_AllCarts {
+  display: flex;
+  max-width: 100%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
 }
-.Rating_Price{
- color: #D23F57;
- display: flex;
- align-items: center;
- justify-content: center;
- margin: 0;
+
+.Rating_Image {
+  width: 100%;
+  border-radius: 6px;
 }
-.Rating_Image:hover{
-    background-color:darkgrey;
-    // opacity: 0.8;    
+.Rating_Icons {
+  color: #faaf00;
+  display: flex;
+  align-items: center;
+  margin: 7.2px;
+  justify-content: center;
 }
-.Rating_Text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 8px 0;
+.Rating_Icons_Rate {
+  color: black;
+}
+
+.Rating_Price {
+  color: #d23f57;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.Rating_Image:hover {
+  background-color: darkgrey;
+}
+.Rating_Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 // Featueres & Brand Scss
-.Brands_Carts{
-    display: flex;
-    background-color: white;
-    /* padding-top: 36px; */
-    /* padding-left: 36px; */
-    border-radius: 8px;
-    padding: 16px 0px 0px 16px;
-    //  margin-right: -71px;
+.Brands_Carts {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px 0px 0px 16px;
 }
-.Brands_Carts_Img{
-    width:100%;
-    border-radius: 6%;
+.Brands_Carts_Img {
+  width: 100%;
+  border-radius: 6%;
 }
-.Brand_Icon{
-    color: rgb(250, 180, 0);
-    font-size: 1.5em;
+.Brand_Icon {
+  color: rgb(250, 180, 0);
+  font-size: 1.5em;
 }
-.Brand_Heading_Text{
-    font-weight: 700;
-    font-size:25px;
-    color: #2B3445;
-    position: relative;
-    left: 10px;
+.Brand_Heading_Text {
+  font-weight: 700;
+  font-size: 25px;
+  color: #2b3445;
+  position: relative;
+  left: 10px;
 }
-.Brand_Heading{
-    display: flex;
-    // justify-content: center;
-    align-items: center;
-    justify-content:space-between;
+.Brand_Heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.Brands,.Shops{
-    // margin-right: 16px;
-    // width: 50%;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    // font-size: 20px;
-    font-weight: 600;
-    // line-height: 1.5;
-    padding: 0.5rem 1rem;
-    color: #2B3445;
-    text-transform: none;
-    white-space: normal;
-    cursor: pointer;
+.Brands,
+.Shops {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: #2b3445;
+  text-transform: none;
+  white-space: normal;
+  cursor: pointer;
 }
-.Brand_Veiw_Scss{
-    color: gray;
-    display:flex;
-    align-items: center;
-    // position: absolute;
-    // left: 93%;
-    // top: 275%;
-    // margin-left: 33%;
-    
-  }
-  .Brands_Carts_Img:hover{
-    //   background-color:darkgrey;
-    //   opacity: 0.8;
-  }
-  .Brands_Carts_Hover{
-    position: relative;
-    display: flex;
-  }
-  .Brand{
-    width: 100%;
-    height: 97%;
-    position: absolute;
-    top: 0;
-    border-radius: 6px
-  }
-  .Rating_Div{
-      margin-right:14px ;
-      cursor: pointer;
-  }
-  .Brand:hover{
-    background-color: #585656;
-    opacity: 0.4;
-    height: 100%;
-  }
+.Brand_Veiw_Scss {
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+
+.Brands_Carts_Hover {
+  position: relative;
+  display: flex;
+}
+.Brand {
+  width: 100%;
+  height: 97%;
+  position: absolute;
+  top: 0;
+  border-radius: 6px;
+}
+.Rating_Div {
+  margin-right: 14px;
+  cursor: pointer;
+}
+.Brand:hover {
+  background-color: #585656;
+  opacity: 0.4;
+  height: 100%;
+}

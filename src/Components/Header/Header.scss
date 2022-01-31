@@ -356,7 +356,7 @@ option:hover {
   z-index: 1;
   min-width: 50px;
   color: grey;
-  margin-right: 30px;
+  margin-right: 50px;
   width: 100px;
   display: flex;
   justify-content: flex-start;
@@ -388,7 +388,7 @@ option {
   padding-left: 7px;
 }
 .btn-Categories-Parent {
-    min-width: 120px;
+    min-width: 170px;
     width: 214px;
     cursor: pointer;
 }
@@ -462,7 +462,7 @@ option:hover {
   width: auto;
   background: #fff;
   position: absolute;
-  // left: 165px;
+  margin-left: 25px;
   svg.Categories_Icons,
   .categories_icon {
     transform: rotate(90deg);

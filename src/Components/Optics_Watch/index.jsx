@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { data_Optics_Watch, data_Optics_Watch1, data_Optics_Watch2 } from '../Helper/Optics_Watch_Helper';
+import { data_Optics_Watch} from '../Helper/Optics_Watch_Helper';
 import { FiStar } from 'react-icons/fi';
 import { BsPlus } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
@@ -38,27 +38,11 @@ const Optics_Watch = () => {
           </div>
         </div>
         <div className="All_Carts">
-          {/* <div> */}
           {data_Optics_Watch?.map((item, index) => {
             return (
               <Optics item={item} index={index} />
             )
           })}
-          {/* </div> */}
-          {/* <div>
-          {data_Optics_Watch1?.map((item, index)=>{
-              return (
-                <Optics item={item} index={index}/>
-              )
-          })}
-          </div>
-          <div>
-          {data_Optics_Watch2?.map((item, index)=>{
-              return (
-                <Optics item={item} index={index}/>
-              )
-          })}
-          </div> */}
         </div>
       </div>
     </div>
@@ -82,11 +66,11 @@ export const Optics = ({ item, index }) => {
         <p className="Discount_Css"> {item.discount}</p>
         <div className='hover_flex'>
         <i>
-          <AiFillEye style={{fontSize:"21px"}}/></i>
+          <AiFillEye style={{fontSize:"25px"}}/></i>
         <div onClick={() => setHeart((prev) => !prev)} 
         className="Hover_Icon">
           {heart?(
-              <AiFillHeart style={{color:"red",fontSize:"21px"}}/>
+              <AiFillHeart style={{color:"red",fontSize:"25px"}}/>
               ):(
                 <i >
     
@@ -95,7 +79,7 @@ export const Optics = ({ item, index }) => {
         </div>
         </div>
       </div>
-      <img src={item.image} width="100%" />
+      <img src={item.image} width="100%" alt='image'/>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>
           <p> {item.description}</p>

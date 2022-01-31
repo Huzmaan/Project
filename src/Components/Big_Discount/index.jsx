@@ -1,7 +1,6 @@
-import React,{useState} from "react";
+import React from "react";
 import { GrGift } from "react-icons/gr";
 import "./Big_Discount.scss";
-import {AiOutlineArrowRight,AiOutlineArrowLeft}from "react-icons/ai";
 import Container from "../../Components/Container"
 import SectionHeaders from "../Header/SectionHeaders";
 
@@ -18,7 +17,7 @@ const Big_Discout = () => {
         {big_discout?.map((item, index) => {
           return (
             <div className="Big_Discount_Carts" key={index}>
-              <img className="Big_Discount_Img" src={item.image} />
+              <img className="Big_Discount_Img" src={item.image}  alt="image"/>
               <div style={{display:"grid"}}>
               <h4 className="Big_Discount_Description">{item.description}</h4>
               <span className="Big_Discount_Main_Price">

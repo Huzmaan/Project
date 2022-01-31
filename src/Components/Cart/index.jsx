@@ -1,9 +1,8 @@
-import React, { useState,useRef } from "react";
+import React, { useState } from "react";
 import { IoIosFlash } from "react-icons/io";
 import { data } from "../Helper/Carts.Helper";
 import { BsPlus} from "react-icons/bs";
-import { AiOutlineMinus, AiFillHeart, AiFillEye,AiOutlineArrowLeft,AiOutlineArrowRight,AiOutlineHeart } from "react-icons/ai";
-import Container from "../../Components/Container";
+import { AiOutlineMinus, AiFillHeart, AiFillEye,AiOutlineHeart } from "react-icons/ai";
 import "./Cart.scss";
 import SectionHeaders from "../Header/SectionHeaders";
 function Increment(props) {
@@ -20,23 +19,6 @@ function Display(props) {
   return props.currentId ? <p className="Counter">{props.message}</p> : "";
 }
 const Cart = () => {
-  //  const [hello, setHello] = useState(0);
-  // const length = slide.length;
-  // console.log(slide)
-  // // const ref = useRef(null);
-  
-  // const rigthSlide = () => {
-  //   setHello(hello === length - 1 ? 0 : hello + 1);
-  // };
-  
-  // const leftSlide = () => {
-  //   setHello(hello === 0 ? length - 1 : hello - 1);
-  // };
- 
-  // console.log(hello);
-  // if (!Array.isArray(slide) || slide.length <= 0) {
-  //   return null;
-  // }
   return (
     <div>
       <SectionHeaders
@@ -60,22 +42,20 @@ export const Cart1 = ({ item, index }) => {
   
   const incrementCounter = () => setCurrentId(currentId + 1);
   const decrementCounter = () => {
-    // if(currentId > 0)
     setCurrentId(currentId - 1);
   };
-  const hearthover=()=>{
-  }
+ 
   return (
     <div className="Main_Card1" key={index}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <p className="Discount_Css"> {item.discount}</p>
         <div className='hover_flex'>
         <i>
-          <AiFillEye style={{fontSize:"21px"}}/></i>
+          <AiFillEye style={{fontSize:"25px"}}/></i>
         <div onClick={() => setHeart((prev) => !prev)} 
         className="Hover_Icon">
           {heart?(
-              <AiFillHeart style={{color:"red",fontSize:"21px"}}/>
+              <AiFillHeart style={{color:"red",fontSize:"25px"}}/>
               ):(
                 <i >
     
@@ -84,7 +64,7 @@ export const Cart1 = ({ item, index }) => {
         </div>
         </div>
       </div>
-      <img src={item.image} className="Cart_Img" />
+      <img src={item.image} className="Cart_Img"  alt="image"/>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div className="Cart_Description">
           <p className="description"> {item.description}</p>

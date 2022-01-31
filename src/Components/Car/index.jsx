@@ -1,10 +1,9 @@
 import { React, useState } from 'react';
 import './Car.scss';
-import Container from "../../Components/Container";
 import { FiStar } from "react-icons/fi";
 import { BsPlus } from "react-icons/bs";
 import { AiOutlineMinus, AiFillEye,AiFillHeart, AiOutlineHeart } from "react-icons/ai"
-import { Data_Cars, Data_Cars1 } from '../Helper/Cars_Helper'
+import { Data_Cars } from '../Helper/Cars_Helper'
 import { IoIosArrowForward } from "react-icons/io";
 
 function Increment(props) {
@@ -38,7 +37,6 @@ const Car = () => {
           </p>
         </div>
       </div>
-      {/* <Container> */}
       <div className="All_Carts">
         {Data_Cars?.map((item, index) => {
           return (
@@ -46,14 +44,7 @@ const Car = () => {
           )
         })}
       </div>
-      {/* </Container> */}
-      {/* <div className="All_Carts">
-          {Data_Cars1?.map((item, index)=>{
-              return (
-                <Car1 item={item} index={index}/>
-              )
-          })}
-        </div> */}
+     
     </div>
   )
 }
@@ -74,11 +65,11 @@ export const Car1 = ({ item, index }) => {
         <p className="Discount_Css"> {item.discount}</p>
         <div className='hover_flex'>
         <i>
-          <AiFillEye style={{fontSize:"21px"}}/></i>
+          <AiFillEye style={{fontSize:"25px"}}/></i>
         <div onClick={() => setHeart((prev) => !prev)} 
         className="Hover_Icon">
           {heart?(
-              <AiFillHeart style={{color:"red",fontSize:"21px"}}/>
+              <AiFillHeart style={{color:"red",fontSize:"25px"}}/>
               ):(
                 <i >
     
@@ -87,7 +78,7 @@ export const Car1 = ({ item, index }) => {
         </div>
         </div>
       </div>
-      <img src={item.image} width="100%" />
+      <img src={item.image} width="100%" alt='image'/>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>
           <p> {item.description}</p>

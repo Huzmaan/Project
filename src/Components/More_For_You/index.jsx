@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FiStar } from 'react-icons/fi';
 import { BsPlus } from 'react-icons/bs';
-import { IoIosArrowForward } from 'react-icons/io';
 import { AiOutlineMinus, AiFillEye,AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import { Data_More_For_You } from '../Helper/More_For_You_Helper';
 import Container from "../../Components/Container";
@@ -34,14 +33,6 @@ const More_For_You = () => {
         <SectionHeaders
           heading="More For You"
         >
-          {/* <div style={{display: 'flex',justifyContent:'space-between'}}>
-            <h3 className="MobilePhone_Heading_text">More For You</h3>
-            <div className="Veiw_Scss">
-        <p >View all
-         <IoIosArrowForward/>
-        </p>
-        </div>
-        </div> */}
           <div className="All_Carts">
             {Data_More_For_You?.map((item, index) => {
               return (
@@ -71,11 +62,11 @@ export const Mobile = ({ item, index }) => {
         <p className="Discount_Css"> {item.discount}</p>
         <div className='hover_flex'>
         <i>
-          <AiFillEye style={{fontSize:"21px"}}/></i>
+          <AiFillEye style={{fontSize:"25px"}}/></i>
         <div onClick={() => setHeart((prev) => !prev)} 
         className="Hover_Icon">
           {heart?(
-              <AiFillHeart style={{color:"red",fontSize:"21px"}}/>
+              <AiFillHeart style={{color:"red",fontSize:"25px"}}/>
               ):(
                 <i >
     
@@ -84,7 +75,7 @@ export const Mobile = ({ item, index }) => {
         </div>
         </div>
       </div>
-      <img src={item.image} width="100%" />
+      <img src={item.image} width="100%"  alt='image'/>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>
           <p> {item.Description}</p>

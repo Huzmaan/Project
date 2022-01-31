@@ -1,31 +1,9 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import Container from "../../Components/Container";
 import logoWhite from "../../Images/logo-white.svg";
 import { MdPhone, MdOutlineEmail } from "react-icons/md";
-import { IoIosArrowForward } from "react-icons/io";
-import useOnOutsideClick from "../Hooks/useOnOutsideClick";
 
-const Header_Border = ({ onClose, Account }) => {
-  const modalRef = useRef(null);
-  useOnOutsideClick(modalRef, () => {
-    // onClose();
-  });
-  const [inCatergory, setinCatergory] = useState(true);
-  const [Catergory, setCatergory] = useState(true);
-  const [langauge, setlangauge] = useState(false);
-  const [Langauge, setLangauge] = useState(false);
-  const [close, setClose] = useState(false);
-
-  const lockScroll = React.useCallback(() => {
-    setClose((prev) => !prev);
-    document.body.style.overflow = "hidden";
-  }, []);
-
-  const unlockScroll = React.useCallback(() => {
-    setClose(false);
-    document.body.style.overflow = "";
-  }, []);
-
+const Header_Border = () => {
   return (
     <div>
       <div className="Header_Border">
@@ -74,14 +52,7 @@ const Header_Border = ({ onClose, Account }) => {
           </div>
         </Container>
       </div>
-      {/* {close && (
-        <inCatergory
-          onClose={() => {
-            unlockScroll();
-          }}
-          Account={Account}
-        />
-      )} */}
+     
     </div>
   );
 };

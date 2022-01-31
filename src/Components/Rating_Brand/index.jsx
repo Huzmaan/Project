@@ -4,7 +4,6 @@ import { FaMedal } from "react-icons/fa";
 import { RatingBrand, Brand } from "../Helper/Rating_Brands.Helper";
 import { AiFillStar } from "react-icons/ai";
 import { GiNorthStarShuriken } from "react-icons/gi";
-import { IoIosArrowForward } from "react-icons/io";
 import Container from "../../Components/Container";
 import SectionHeaders from "../Header/SectionHeaders";
 
@@ -21,7 +20,7 @@ const Rating_Brand = () => {
               {RatingBrand?.map((item, index) => {
                 return (
                   <div className="Rating_Div" key={index}>
-                    <img className="Rating_Image" src={item.image} />
+                    <img className="Rating_Image" src={item.image} alt="image"/>
                     <br />
                     <div className="Rating_Texts">
                       <span className="Rating_Icons">
@@ -54,7 +53,7 @@ const Rating_Brand = () => {
                 return (
                   <div className="Brands" key={index}>
                     <div className="Brands_Carts_Hover">
-                      <img className="Brands_Carts_Img" src={item.image_Brand} />
+                      <img className="Brands_Carts_Img" src={item.image_Brand} alt="image"/>
                       <div className="Brand"></div>
                     </div>
                     <h4>{item.description_Brand}</h4>

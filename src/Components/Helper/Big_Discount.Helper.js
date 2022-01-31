@@ -6,8 +6,8 @@ import Camera from "../../Images/camera.png";
 import HomeAppliance from "../../Images/HomeAppliances.png"; 
 import CameraSony from "../../Images/Camera_sony.png";
 import GameDevice from "../../Images/game_divce.png";
-import pune from "../../Images/pune.png";
-import Camera2 from "../../Images/camera-2.png";
+// import pune from "../../Images/pune.png";
+// import Camera2 from "../../Images/camera-2.png";
 export const big_discout = [
   { image: Headphone, description: "benX 2020",price: "$250",disPrice: "$250",},
   { image: Tv, description: "Tony TV 1080p",price: "$250",disPrice: "$250", },

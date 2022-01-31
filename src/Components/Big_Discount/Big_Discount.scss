@@ -1,25 +1,14 @@
 .Big_Discount_Img{
-    // display: flex;
     width:100%;
-    // margin: 20px;
-    // margin: inherit;
-    // height:35vh;
-    // position: relative;
-    // left:9px;
     
 }
 .Big_Discount_Img:hover{
     background-color: darkgray;
-    border-radius: 7px;
-    width: 79%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 20px;
+    border-radius: 10px;
 }
 .Big_Discount_Description{
     font-weight: 600;
-    padding-left: 10px;
+    // padding-left: 10px;
     width: 100%;
     margin-top: 0;
     margin-bottom: 5px;
@@ -35,16 +24,12 @@
     padding-left: 10px;
 }
 .Big_Discount_Carts{
-    // box-shadow: 5px 3px 5px #000000;
-    min-width: 15%;
-    // height: 15em;
-    // max-width: 12%;
+    // min-width: 15%;
     margin:12px;
     background-color: #fff;
     border-radius: 6px;
-    // width: 185.33px;
-    // height: 239.33px;
     cursor: pointer;
+    padding: 10px;
 }
 .Big_Discout_Heading_Text{
     font-weight: 700;
@@ -66,15 +51,13 @@
     }
 }
 .Big_Discount_All_Carts{
-    // max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(128px,1fr));
     // gap: 25px;
 }
 
 .Big_Discount_Main_Price{
     display: flex;
-    padding-left: 10px;
-    margin-bottom: 15px;
-    // justify-content: space-between;
+    // padding-left: 10px;
+    // margin-bottom: 15px;
 }

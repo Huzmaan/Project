@@ -80,11 +80,11 @@ export const Mobile = ({ item, index }) => {
         <p className="Discount_Css"> {item.discount}</p>
         <div className='hover_flex'>
         <i>
-          <AiFillEye style={{fontSize:"21px"}}/></i>
+          <AiFillEye style={{fontSize:"25px"}}/></i>
         <div onClick={() => setHeart((prev) => !prev)} 
         className="Hover_Icon">
           {heart?(
-              <AiFillHeart style={{color:"red",fontSize:"21px"}}/>
+              <AiFillHeart style={{color:"red",fontSize:"25px"}}/>
               ):(
                 <i >
     
@@ -93,7 +93,7 @@ export const Mobile = ({ item, index }) => {
         </div>
         </div>
       </div>
-      <img src={item.image} width="100%" />
+      <img src={item.image} width="100%" alt='image'/>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>
           <p> {item.Description}</p>
