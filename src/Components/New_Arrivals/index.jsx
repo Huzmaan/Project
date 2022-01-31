@@ -32,7 +32,7 @@ const New_Arrivals = () => {
                     <img className="New_Arrivals_Image_Scss" src={item.image} />
                     <div className='Brand'></div>
                   </div>
-                  <p style={{ fontWeight: "500" }}>{item.description}</p>
+                  <p style={{ fontWeight: "500",marginBottom:"0" }}>{item.description}</p>
                   <p className="New_Arrivals_Price_scss">{item.price}</p>
                 </div>
               );
