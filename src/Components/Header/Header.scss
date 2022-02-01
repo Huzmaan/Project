@@ -40,12 +40,17 @@
 //     padding: 0 24px;
 //   }
 // }
+@media only screen and (max-width: 760px) {
+  .Search_Parent {
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 900px) {
   .Header_Search {
     justify-content: center !important;
   }
   .Search_Parent {
-    width: 85% !important;
+    width: 85%;
   }
   .Mobile_Reponsive {
     display: flex !important;

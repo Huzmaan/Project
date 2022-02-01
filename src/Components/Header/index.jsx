@@ -7,7 +7,7 @@ import Header_Catergories_btn from "./Header_Catergories_btn";
 import Header_DropDown from "./Header_DropDown";
 import Header_Mobile from "./Header_Mobile";
 
-const Header = () => {
+const Header = ({Account}) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -16,6 +16,7 @@ const Header = () => {
     });
   }, []);
   return (
+    <>
     <div>
       <Header_Border />
 
@@ -30,13 +31,14 @@ const Header = () => {
       <div className="Main_Header">
         <Container>
           <div className="Header_Container">
-            <Header_Catergories_btn haveText resetCategory={scrolled} />
+            <Header_Catergories_btn Account haveText resetCategory={scrolled} />
             <Header_DropDown />
           </div>
         </Container>
         <Header_Mobile />
       </div>
     </div>
+    </>
   );
 };
 

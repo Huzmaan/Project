@@ -2,12 +2,14 @@ import React, { useRef } from 'react';
 import { FaFacebookF } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import './LoginSignup.scss'
-import useOnOutsideClick from '../../Hooks/useOnOutsideClick';
+import UseOnOutsideClick from '../../Hooks/UseOnOutsideClick';
 
 
 const LoginSignup = ({ onClose }) => {
+    console.log("singup on close",onClose)
     const modalRef = useRef(null);
-    useOnOutsideClick(modalRef, () => {
+    console.log("wasu",modalRef)
+    UseOnOutsideClick(modalRef, () => {
         onClose();
         // console.log("outsideclick");
     });
