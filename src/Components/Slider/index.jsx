@@ -9,10 +9,12 @@ const Slider = ({ slides }) => {
 
   const rigthSlide = () => {
     setActiveIndex(activeIndex === length - 1 ? 0 : activeIndex + 1);
+    // ("#nextright").attr('disabled','disabled');
   };
 
   const leftSlide = () => {
     setActiveIndex(activeIndex === 0 ? length - 1 : activeIndex - 1);
+    // ("#prevleft").attr('disabled','disabled');
   };
   console.log(activeIndex);
   if (!Array.isArray(slides) || slides.length <= 0) {
@@ -30,12 +32,21 @@ const Slider = ({ slides }) => {
             }}
           >
             <div className="Icon_Slider">
-              <input type="radio" className="left-arrow" onClick={leftSlide} />
               <input
+                name="farhan"
+                id="next"
+                type="radio"
+                className="left-arrow"
+                onClick={leftSlide}
+                defaultChecked
+              ></input>
+              <input
+                name="farhan"
+                id="prev"
                 type="radio"
                 className="right-arrow"
                 onClick={rigthSlide}
-              />
+              ></input>
             </div>
             <div
               className="sliderMain"
@@ -46,7 +57,7 @@ const Slider = ({ slides }) => {
                 height: "100%",
                 overflow: "hidden",
                 display: "flex",
-                width: "300vw",
+                width: "200vw",
                 transition: "all 0.5s ease 0s",
               }}
             >

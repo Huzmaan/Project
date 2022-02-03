@@ -11,18 +11,6 @@ const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
     setCatergory(false);
   }, [resetCategory]); 
 
-  // const lockScroll = React.useCallback(() => {
-  //   setCatBtn(prev => !prev)
-  //   document.body.style.overflow = 'hidden';
-  // }, [])
-
-  // const unlockScroll = React.useCallback(() => {
-  //   setCatBtn(false)
-  //   document.body.style.overflow = '';
-  // }, [])
-  // const unlockScroll = () => {
-  //   setCatBtn(false);
-  // };
   const Close = () => {
     setCatergory(false);
     console.log("hahaha onclose working");

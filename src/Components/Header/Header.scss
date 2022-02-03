@@ -240,19 +240,20 @@
 .Language {
   user-select: none;
   list-style: none;
-    background: white;
-    line-height: 2;
-    z-index: 1;
-    top: 39px;
-    position: absolute;
-    padding: 13px 0px;
-    color: #000000;
-    width: 61px;
-    display: grid;
-    align-items: center;
-    /* box-shadow: 1px 5px 5px grey; */
-    border-radius: 4px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px, rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+  background: white;
+  line-height: 2;
+  z-index: 1;
+  top: 39px;
+  position: absolute;
+  padding: 13px 0px;
+  color: #000000;
+  width: 61px;
+  display: grid;
+  align-items: center;
+  /* box-shadow: 1px 5px 5px grey; */
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+    rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
   .list_Item {
     align-items: center;
     justify-content: center;
@@ -394,9 +395,9 @@ option {
   padding-left: 7px;
 }
 .btn-Categories-Parent {
-    min-width: 170px;
-    width: 214px;
-    cursor: pointer;
+  min-width: 170px;
+  width: 214px;
+  cursor: pointer;
 }
 .Btn-Categories {
   border-end-end-radius: 25px;
@@ -514,7 +515,7 @@ option:hover {
 .DropDown .DropDown_Contain {
   position: absolute;
   top: 20px;
-  padding: 10px;
+  // padding: 10px;
   background-color: #fff;
   box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
   // font-weight: 500;
@@ -522,10 +523,11 @@ option:hover {
   z-index: 1;
   min-width: 200px;
   border-radius: 10px;
-  transition:2s all ease
+  transition: 2s all ease;
   // margin-top: 30px;
 }
-.DropDown .DropDown_Contain .DropDown_Item,.dropdownitems {
+.DropDown .DropDown_Contain .DropDown_Item,
+.dropdownitems {
   padding: 10px;
   cursor: pointer;
   transition: all 0.2s;
@@ -534,12 +536,15 @@ option:hover {
   align-items: center;
   position: relative;
 }
-.DropDown .DropDown_Contain  .DropDown_Item:hover,.dropdownitems:hover {
+.DropDown .DropDown_Contain .DropDown_Item:hover,
+.dropdownitems:hover {
   color: #d23f57;
   background: #fce9ec;
-  &:hover{
-    .dropDown_containers{
+  &:hover {
+    .dropDown_containers {
       display: block;
+      transition: 3s all ease;
+      // background-color: red;
     }
   }
 }
@@ -558,7 +563,7 @@ option:hover {
 .Hover {
   padding-right: 30px;
   height: 4px;
-   line-height: 1;
+  line-height: 1;
   margin: 0;
 }
 .DropDown_Contain {
@@ -595,22 +600,26 @@ option:hover {
 }
 .dropDown_containers {
   display: none;
-  top: 10px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
-    color: #333;
-    z-index: 1;
-    min-width: 230px;
-    border-radius: 10px;
-    /* margin-top: 30px; */
-    position: absolute;
-    transition:5s all ease;
-    left: 220px;
+  top: 0px;
+  padding: 0 10px;
+  color: #333;
+  z-index: 1;
+  min-width: 230px;
+  /* margin-top: 30px; */
+  position: absolute;
+  transition: 5s all ease;
+  background-color: transparent;
+  left: 200px;
   &:hover {
     .dropDown_containers {
       display: block;
     }
+  }
+  .dropDown_innerDiv {
+    border-radius: 10px;
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+    background-color: #fff;
+    overflow: hidden;
   }
 }
 
