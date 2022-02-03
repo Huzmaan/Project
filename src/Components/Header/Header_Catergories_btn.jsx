@@ -9,7 +9,7 @@ const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
   const [catBtn, setCatBtn] = useState(false);
   useEffect(() => {
     setCatergory(false);
-  }, [resetCategory]);
+  }, [resetCategory]); 
 
   // const lockScroll = React.useCallback(() => {
   //   setCatBtn(prev => !prev)
@@ -24,7 +24,7 @@ const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
   //   setCatBtn(false);
   // };
   const Close = () => {
-    setCatergory(false)
+    setCatergory(false);
     console.log("hahaha onclose working");
   };
 
@@ -49,7 +49,7 @@ const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
             {Catergory && (
               <CatergoriesBtnDropdown
                 onClose={() => {
-                  setCatergory(false)
+                  setCatergory(false);
                 }}
               />
             )}
@@ -60,7 +60,7 @@ const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
       {catBtn && (
         <CatergoriesBtnDropdown
           onClose={() => {
-            setCatergory(false)
+            setCatergory(false);
           }}
           Account={Account}
         />

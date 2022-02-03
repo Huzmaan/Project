@@ -30,7 +30,7 @@ const MobilePhone = () => {
   return (
     <div className='Car_Main'>
       <div >
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: "12px" }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <h3 className="MobilePhone_Heading_text">Mobile Phones</h3>
           <div className="Veiw_Scss">
             <p >View all

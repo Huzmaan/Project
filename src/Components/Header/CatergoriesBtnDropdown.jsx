@@ -3,8 +3,6 @@ import { cate_btn } from "../Helper/Catergories_btn_helper";
 import UseOnOutsideClick from "../Hooks/UseOnOutsideClick";
 const CatergoriesBtnDropdown = ( {onClose} ) => {
   const DropdownRef = useRef(null);
-
-
   UseOnOutsideClick(DropdownRef, () => {
     onClose();
     // console.log("outsideclick");

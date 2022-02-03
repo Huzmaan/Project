@@ -29,7 +29,7 @@ function Display(props) {
 const Car = () => {
   return (
     <div className="Car_Main">
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: "12px" }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <h3 className="Cars_Heading_text">Cars</h3>
         <div className="Veiw_Scss">
           <p >View all

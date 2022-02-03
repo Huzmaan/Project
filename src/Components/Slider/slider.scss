@@ -31,7 +31,8 @@
   margin-bottom: 21.6px;
   margin-top: 0px;
   color: #0f3460;
-  line-height: 2;
+  // line-height: 2;
+  width: 80%;
 }
 
 .btn_Slider {
@@ -122,12 +123,14 @@
 @media only screen and (max-width: 600px) {
   .Slider_Img {
     margin: 0;
+    width: 90%;
   }
   .Slider_main {
     display: block;
   }
   .Slider_Heading {
     font-size: 32px;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -135,8 +138,7 @@
     display: block;
     padding: 32px 24px;
   }
-  .Slider,
-  .Slider_Img {
+  .Slider {
     width: 100% !important;
     max-width: 100% !important;
   }
