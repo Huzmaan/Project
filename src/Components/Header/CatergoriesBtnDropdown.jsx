@@ -5,7 +5,6 @@ const CatergoriesBtnDropdown = ( {onClose} ) => {
   const DropdownRef = useRef(null);
   UseOnOutsideClick(DropdownRef, () => {
     onClose();
-    // console.log("outsideclick");
 });
 console.log("DropdownRef",DropdownRef)
   return (

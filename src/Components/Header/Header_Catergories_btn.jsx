@@ -2,7 +2,6 @@ import { React, useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
 import CatergoriesBtnDropdown from "./CatergoriesBtnDropdown";
-import { useRef } from "react";
 
 const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
   const [Catergory, setCatergory] = useState(false);
@@ -13,7 +12,6 @@ const Header_Catergories_btn = ({ haveText, resetCategory, Account }) => {
 
   const Close = () => {
     setCatergory(false);
-    console.log("hahaha onclose working");
   };
 
   return (

@@ -1,30 +1,7 @@
-import { React, useState } from 'react';
-import { data_Optics_Watch} from '../Helper/Optics_Watch_Helper';
-import { FiStar } from 'react-icons/fi';
-import { BsPlus } from "react-icons/bs";
+import  React  from 'react';
+import { data_Optics_Watch} from '../Helper/Carts.Helper';
 import { IoIosArrowForward } from "react-icons/io";
-import { AiOutlineMinus, AiFillEye,AiFillHeart, AiOutlineHeart } from "react-icons/ai"
-
-function Increment(props) {
-
-  return (
-    <BsPlus className="Plus_Icon" onClick={props.onClickFunction} />
-  )
-}
-function Decrement(props) {
-
-  return (
-
-    props.currentId ? <AiOutlineMinus className="Minus_Icon" onClick={props.onClickFunction} /> : ""
-
-
-  )
-}
-function Display(props) {
-  return (
-    props.currentId ? <p className="Counter">{props.message}</p> : ""
-  )
-}
+import Cart1 from '../AllCarts';
 const Optics_Watch = () => {
   return (
     <div className='Car_Main'>
@@ -39,9 +16,8 @@ const Optics_Watch = () => {
         </div>
         <div className="All_Carts">
           {data_Optics_Watch?.map((item, index) => {
-            return (
-              <Optics item={item} index={index} />
-            )
+            return <Cart1 item={item} index={index}/>
+            
           })}
         </div>
       </div>
@@ -50,57 +26,3 @@ const Optics_Watch = () => {
 }
 
 export default Optics_Watch;
-
-
-export const Optics = ({ item, index }) => {
-  const [heart,setHeart]= useState(false);
-  const [currentId, setCurrentId] = useState(0);
-  const incrementCounter = () => setCurrentId(currentId + 1);
-  let decrementCounter = () => setCurrentId(currentId - 1);
-  if (currentId <= 1) {
-    decrementCounter = () => setCurrentId(0);
-  }
-  return (
-    <div className="Main_Card" key={index}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <p className="Discount_Css"> {item.discount}</p>
-        <div className='hover_flex'>
-        <i>
-          <AiFillEye style={{fontSize:"25px"}}/></i>
-        <div onClick={() => setHeart((prev) => !prev)} 
-        className="Hover_Icon">
-          {heart?(
-              <AiFillHeart style={{color:"red",fontSize:"25px"}}/>
-              ):(
-                <i >
-    
-              <AiOutlineHeart style={{fontSize:"21px"}}/>   </i>
-          )}
-        </div>
-        </div>
-      </div>
-      <img src={item.image} width="100%" alt='image'/>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <div>
-          <p> {item.description}</p>
-          <div className="Card_Icon">
-            <FiStar /> <FiStar /> <FiStar /> <FiStar />
-            <FiStar />
-          </div>
-          <div className="Card_Price">
-            <p className="Price_Actual"> {item.Price_Actual}</p>
-            <p className="Price_Previous"><s> {item.Price_Previous}</s></p>
-          </div>
-        </div>
-        <div style={{ position: "relative", width: "30px", top: "40px" }}>
-          <div style={{ position: "absolute", bottom: "60px", textAlign: "center" }}>
-            <Decrement onClickFunction={decrementCounter} currentId={currentId} />
-            <Display message={currentId} currentId={currentId} />
-          </div>
-          <Increment onClickFunction={incrementCounter} />
-        </div>
-      </div>
-
-    </div>
-  )
-}

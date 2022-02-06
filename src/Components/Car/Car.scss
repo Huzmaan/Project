@@ -4,45 +4,19 @@
   color: #2b3445;
   margin-left: 20px;
 }
-@media only screen and (max-width:1140px){
-  .Main_Card{
-    // width: ;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .All_Carts {
-    // display:grid!important;
-  }
-  .Main_Card {
-    // width: 22em !important;
-    // grid-template-columns: 500px 500px
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill,minmax(14em,1fr));
-    // grid-template-columns: repeat(auto,1fr)
-    // min-width: 18em !important;
-    // max-width: 22em !important;
-  }
+.Main_Card1{
+  user-select: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
 }
 @media only screen and (max-width:900px){
   .Main_Card{
     grid-template-columns: repeat(auto-fill,minmax(100%,100%)) !important;
   }
 }
-// .All_Carts{
-//     display: flex;
-//     .Main_Card{
-//       min-width: 20%;
-//       width: 18em;
-//       box-shadow: grey 0px 0px 2px;
-//       /* position:absolute; */
-//       padding:10px 20px;
-//       border-radius:20px;
-//       margin: 20px 13px;
-//       background-color:#ffff;
-
-//     }
-//   }
-.Main_Card:hover {
+.Main_Card1:hover {
   box-shadow: 5px 5px 5px #aeb0b38a;
 }
 .Car_Main{
@@ -51,12 +25,9 @@
 }
 .Cart_Discount_Css {
   border-radius: 50px;
-  // padding-left:10px;
   background-color: rgb(210, 63, 87);
   max-width: 23%;
-  // height: 24px;
   position: relative;
-  // top: -264px;
   color: white;
   font-size: x-small;
   display: flex;
@@ -67,7 +38,6 @@
 .Card_Icon {
   display: inline-flex;
   position: relative;
-  //   color: rgb(250, 175, 0);
   cursor: pointer;
   text-align: left;
   -webkit-tap-highlight-color: transparent;
@@ -86,20 +56,3 @@
 .Price_Previous {
   color: gray;
 }
-// .Plus_Icon{
-//   color: rgb(210, 63, 87);;
-//   font-size: xx-large;
-//   // border: rgb(210, 63, 87,0.5);
-//   display: flex;
-//   left: 38%;
-//   position: relative;
-//   cursor: pointer;
-// }
-// .Plus_Icon{
-//   box-shadow:3px 3px 5px rgba(210,63, 87);
-// }
-// .Car_Main{
-//     position: relative;
-//     left:22%;
-//     bottom:580px;
-// }

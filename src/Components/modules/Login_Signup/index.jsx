@@ -11,7 +11,6 @@ const LoginSignup = ({ onClose }) => {
     console.log("wasu",modalRef)
     UseOnOutsideClick(modalRef, () => {
         onClose();
-        // console.log("outsideclick");
     });
     return (
         <div className='Container_Login'>
@@ -52,7 +51,6 @@ const LoginSignup = ({ onClose }) => {
                         <div className='Forget_Main'>
                             <p className='Forget_Text'>Forget Your Password</p>
                             <button className="Btn">Reset It</button>
-                            {/* <p onClick={onClose}></p> */}
                         </div>
                     </div>
                 </div>

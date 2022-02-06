@@ -9,14 +9,11 @@ const Slider = ({ slides }) => {
 
   const rigthSlide = () => {
     setActiveIndex(activeIndex === length - 1 ? 0 : activeIndex + 1);
-    // ("#nextright").attr('disabled','disabled');
   };
 
   const leftSlide = () => {
     setActiveIndex(activeIndex === 0 ? length - 1 : activeIndex - 1);
-    // ("#prevleft").attr('disabled','disabled');
   };
-  console.log(activeIndex);
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
@@ -33,7 +30,7 @@ const Slider = ({ slides }) => {
           >
             <div className="Icon_Slider">
               <input
-                name="farhan"
+                name="icon"
                 id="next"
                 type="radio"
                 className="left-arrow"
@@ -41,7 +38,7 @@ const Slider = ({ slides }) => {
                 defaultChecked
               ></input>
               <input
-                name="farhan"
+                name="icon"
                 id="prev"
                 type="radio"
                 className="right-arrow"

@@ -1,6 +1,4 @@
 .Container_Login{
-// position:fixed;
-// z-index: 3;
 background-color: transparent;
   height: 100vh;
   width: 100vw;
@@ -16,14 +14,6 @@ background-color: transparent;
   backdrop-filter: brightness(0.5);
   user-select: none;
 .loginsignup{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // z-index: 2;
-    // position:absolute;
-    // left: 0;
-    // top: 0;
-    // right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,24 +26,19 @@ background-color: transparent;
 
 .LoginSignup_Main{
     background-color: #fff;
-    // box-shadow: 10px 5px 5px grey;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     text-align: center;
     padding: 17px 3.75rem 17px;
     font: -webkit-small-control;
     border-radius: 20px;
 
-.LoginSignup_Heading{
-    // display: grid;
-    // justify-content: center;
-    // align-items: center;
 
 .LoginSignup_Heading_Text{
     font-size: 20px;
     font-weight: 700;
     margin: 15px;
 }
-}
+
 .Login_Btn{
     width: 100%;
     background-color: rgb(210, 63, 87);
@@ -219,10 +204,6 @@ background-color: transparent;
 }
 }
 .LoginSignup_Heading_Paragraph{
-    // align-items: center;
-    // justify-content: center;
-    // display: flex;
-    // margin: 0;
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 36px;

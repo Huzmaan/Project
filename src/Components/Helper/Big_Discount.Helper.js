@@ -1,4 +1,3 @@
-// import {Big_Discout} from "../Components/Big_Discout"
 import Headphone from "../../Images/Headphone.png";
 import Tv from "../../Images/tv.png";
 import ps4 from "../../Images/ps4.png";

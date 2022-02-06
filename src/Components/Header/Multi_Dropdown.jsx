@@ -8,15 +8,14 @@ export const MultiDropdown = () => {
     <>
       <div className="Main_MultiDropDown">
         <div className="Main_Multidropdown">
-          {Multi_dropdown?.map((item, index) => {
+          {Array.from({ length: 8 })?.map((_, index) => {
             return (
               <div className="multi_dropdown" key={index}>
                 <div className="multidropdown">
-                  <h4 className="dropdown-heading">{item.heading}</h4>
-                  <p className="dropdown-title">{item.first_title}</p>
-                  <p className="dropdown-title">{item.second_title}</p>
-                  <p className="dropdown-title">{item.third_title}</p>
-                  <p className="dropdown-title">{item.fourth_title}</p>
+                  <p className="dropdown-heading">{Multi_dropdown.name}</p>
+                  {Multi_dropdown?.children.map((subtotal) => {
+                    return <p className="dropdown-title">{subtotal}</p>;
+                  })}
                 </div>
               </div>
             );

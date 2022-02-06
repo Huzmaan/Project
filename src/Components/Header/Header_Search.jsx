@@ -7,7 +7,7 @@ import Container from "../../Components/Container";
 import { IoIosArrowForward } from "react-icons/io";
 import Header_Catergories_btn from "./Header_Catergories_btn";
 import LoginSignup from "../modules/Login_Signup/index";
-
+import { btn } from "../Helper/SearchCatBtnHelper";
 
 const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
   const [inCatergory, setinCatergory] = useState(false);
@@ -15,21 +15,19 @@ const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
   const [account, setaccount] = useState(false);
 
   useEffect(() => {
-    console.log("false")
-    setinCatergory(false)
-  }, [resetCategory])
-
+    console.log("false");
+    setinCatergory(false);
+  }, [resetCategory]);
 
   const lockScroll = React.useCallback(() => {
-    setaccount(prev => !prev)
-    document.body.style.overflow = 'hidden';
-  }, [])
-
+    setaccount((prev) => !prev);
+    document.body.style.overflow = "hidden";
+  }, []);
 
   const unlockScroll = React.useCallback(() => {
-    setaccount(false)
-    document.body.style.overflow = '';
-  }, [])
+    setaccount(false);
+    document.body.style.overflow = "";
+  }, []);
   return (
     <>
       <div>
@@ -38,7 +36,12 @@ const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
             <div className="Logo_Btn">
               <img className="Logo" src={logo} alt="logo" />
               <div className="Header_Showminimenu">
-                {showMiniMenu && <Header_Catergories_btn haveText={haveText} resetCategory={resetCategory} />}
+                {showMiniMenu && (
+                  <Header_Catergories_btn
+                    haveText={haveText}
+                    resetCategory={resetCategory}
+                  />
+                )}
               </div>
             </div>
             <div className="Search_Parent">
@@ -57,20 +60,23 @@ const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
                     onClick={() => setinCatergory(!inCatergory)}
                   >
                     <div className="Categories_btn">
-                      <p className="Select">{helloWorld ? helloWorld : "All Categories"}</p>
+                      <p className="Select">
+                        {helloWorld ? helloWorld : "All Categories"}
+                      </p>
                     </div>
                     <IoIosArrowForward className="Categories_Icon" />
                     {inCatergory && (
-                      <div className="Catergories_button">
-                        <li onClick={() => sethelloWorld("All Categories")} className="catergories_title">All Categories</li>
-                        <li onClick={() => sethelloWorld("Car")} className="catergories_title">Car</li>
-                        <li onClick={() => sethelloWorld("Clothes")} className="catergories_title">Clothes</li>
-                        <li onClick={() => sethelloWorld("Electronics")} className="catergories_title">Electronics</li>
-                        <li onClick={() => sethelloWorld("Laptop")} className="catergories_title">Laptop</li>
-                        <li onClick={() => sethelloWorld("Desktop")} className="catergories_title">Desktop</li>
-                        <li onClick={() => sethelloWorld("Camera")} className="catergories_title">Camera</li>
-                        <li onClick={() => sethelloWorld("Toys")} className="catergories_title">Toys</li>
-                      </div>
+                      <ul className="Catergories_button">
+                        {btn?.map((item, index) => (
+                          <li
+                            key={index}
+                            onClick={() => sethelloWorld(item.name)}
+                            className="catergories_title"
+                          >
+                            {item.name}
+                          </li>
+                        ))}
+                      </ul>
                     )}
                   </div>
                 </span>
@@ -79,7 +85,12 @@ const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
             <div className="Header_Icon">
               <p>
                 <i>
-                  <IoMdContact className="Icon" onClick={() => { lockScroll() }} />
+                  <IoMdContact
+                    className="Icon"
+                    onClick={() => {
+                      lockScroll();
+                    }}
+                  />
                 </i>
               </p>
               <p className="Cart_Counter">3</p>
@@ -90,10 +101,14 @@ const Header_Search = ({ haveText, showMiniMenu, resetCategory, Account }) => {
           </div>
         </Container>
       </div>
-      {account && <LoginSignup onClose={() => {
-        unlockScroll()
-
-      }} Account={Account} />}
+      {account && (
+        <LoginSignup
+          onClose={() => {
+            unlockScroll();
+          }}
+          Account={Account}
+        />
+      )}
     </>
   );
 };

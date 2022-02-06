@@ -1,3 +1,68 @@
+// import React from "react";
+// import "./Footer.scss";
+// import Container from "../../Components/Container";
+// import {
+//   Data_Footer_Logo,
+//   Data_Footer_About,
+//   Data_Footer_Contact,
+// } from "../Helper/Footer_Helper";
+
+// const Footer = () => {
+//   return (
+//     <div className="Main_Footer">
+//       <Container>
+//         <div className="Main_Text_Footer">
+//           {Data_Footer_Logo?.map((item, index) => {
+//             return (
+//               <div className="logo" key={index}>
+//                 <img className="Logo-Footer" src={item.image} alt="Logo" />
+//                 <p className="description_Footer">{item.Description}</p>
+//                 <img
+//                   className="PlayStore_Img"
+//                   src={item.image2}
+//                   alt="Playstore"
+//                 />
+//               </div>
+//             );
+//           })}
+//           {Data_Footer_About?.map((item, index) => {
+//             return (
+//               <div className="About" key={index}>
+//                 <h1 className="Heading">{item.Description}</h1>
+//                 {item.children?.map((Paragraph) => {
+//                   return (
+//                     <p className="paragraph">{Paragraph?.name}</p>
+//                   );
+//                 })}
+//               </div>
+//             );
+//           })}
+//           <div>
+//             {Data_Footer_Contact?.map((item, index) => {
+//               return (
+//                 <div className="Contact" key={index}>
+//                   <h1 className="Heading">{item.Description}</h1>
+//                   <p>{item.p1}</p>
+//                   <p>{item.p2}</p>
+//                   <p>{item.p3}</p>
+//                   <div className="Icon_Flex">
+//                     <p className="Icon_Footer">{item.p4}</p>
+//                     <p className="Icon_Footer">{item.p5}</p>
+//                     <p className="Icon_Footer">{item.p6}</p>
+//                     <p className="Icon_Footer">{item.p7}</p>
+//                     <p className="Icon_Footer">{item.p8}</p>
+//                   </div>
+//                 </div>
+//               );
+//             })}
+//           </div>
+//         </div>
+//       </Container>
+//     </div>
+//   );
+// };
+
+// export default Footer;
 import React from 'react';
 import './Footer.scss';
 import Container from "../../Components/Container";

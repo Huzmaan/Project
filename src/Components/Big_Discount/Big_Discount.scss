@@ -8,7 +8,6 @@
 }
 .Big_Discount_Description{
     font-weight: 600;
-    // padding-left: 10px;
     width: 100%;
     margin-top: 0;
     margin-bottom: 5px;
@@ -24,7 +23,6 @@
     padding-left: 10px;
 }
 .Big_Discount_Carts{
-    // min-width: 15%;
     margin:12px;
     background-color: #fff;
     border-radius: 6px;
@@ -53,11 +51,8 @@
 .Big_Discount_All_Carts{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(128px,1fr));
-    // gap: 25px;
 }
 
 .Big_Discount_Main_Price{
     display: flex;
-    // padding-left: 10px;
-    // margin-bottom: 15px;
 }

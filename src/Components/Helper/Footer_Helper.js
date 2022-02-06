@@ -1,3 +1,50 @@
+// import logo from "../../Images/logo-white.svg";
+// import Playstore from "../../Images/appstore.jpg";
+// import { FaFacebookF, FaGoogle } from "react-icons/fa";
+// import { CgTwitter } from "react-icons/cg";
+// import { AiFillYoutube } from "react-icons/ai";
+// import { SiInstagram } from "react-icons/si";
+// export const Data_Footer_Logo = [
+//   {
+//     image: logo,
+//     Description:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.",
+//     image2: Playstore,
+//   },
+// ];
+// export const Data_Footer_About = [
+//   {
+//     Description: "About Us",
+//     children: [
+//       { name: "Careers" },
+//       { name: "Our Stores" },
+//       { name: "Our Cares" },
+//       { name: "Terms & Conditions" },
+//       { name: "Privacy Policy" },
+//     ],
+//   },
+//   {
+//     Description: "Customer Care",
+//     children: [
+//       { name: "Help Center" },
+//       { name: "How to Buy" },
+//       { name: "Track Your Order" },
+//       { name: "Corporate & Bulk Purchasing" },
+//       { name: "Returs & Refunds" },
+//     ],
+//   },
+// ];
+// export const Data_Footer_Contact=[
+// { Description: "Contact Us"},
+// { p1: "70 Washington Square South, New York, NY 10012, United States" },
+// { p2: "Email: uilib.help@gmail.com" },
+// { p3: "Phone: +1 1123 456 780" },
+// { p4: <FaFacebookF /> },
+// { p5: <CgTwitter /> },
+// { p6: <AiFillYoutube /> },
+// { p7: <FaGoogle /> },
+// { p8: <SiInstagram /> },
+// ]
 import logo from "../../Images/logo-white.svg";
 import Playstore from "../../Images/appstore.jpg";
 import { FaFacebookF, FaGoogle } from 'react-icons/fa'
