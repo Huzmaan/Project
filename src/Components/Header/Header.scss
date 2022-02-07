@@ -278,6 +278,7 @@ option:hover {
 }
 .show-header {
   transform: translateY(0);
+    box-shadow: 5px 3px 10px black;
 }
 .hide-header {
   transform: translateY(-400px);

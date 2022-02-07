@@ -5,7 +5,7 @@ import Shoes from "../../Images/dropdownImage.png";
 
 export const MultiDropdown = () => {
   return (
-    <>
+    <div className="dropDown_innerDiv">
       <div className="Main_MultiDropDown">
         <div className="Main_Multidropdown">
           {Array.from({ length: 8 })?.map((_, index) => {
@@ -23,7 +23,7 @@ export const MultiDropdown = () => {
         </div>
         <img className="dropdown_img" src={Shoes} alt="" />
       </div>
-    </>
+    </div>
   );
 };
 
